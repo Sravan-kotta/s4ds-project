@@ -1,0 +1,57 @@
+K J Somaiya Institute of Engineering and Information Technology
+An Autonomous Institute Affiliated to the University of Mumbai
+Academic Year 2022-23
+DEPARTMENT OF ELECTRONICS ENGINEERING
+Test-I
+Class: LY
+Course Name: Artificial Intelligence
+Course Code:ETDLC7033
+Note: All Questions are compulsory.
+Date: 07/09/2022
+Marks: 30
+Time: 1 hr 30 min
+Question
+No.
+Sub
+Question
+No.
+Statement of Question
+Marks
+CO
+BT
+Level
+Q1
+a) Explain in details Turing test approach
+5
+CO1
+U
+b) Differentiate BFS and DFS
+5
+CO2
+U
+OR
+a) Describe goal-based agent with example
+10
+CO1
+R
+Q2
+Identify the PEAS descriptor for the following:
+Satellite image analysis system
+Refinery controller
+E-commerce system
+Blood testing system
+An automated face recognizer
+b)
+10
+CO1
+R
+OR
+a) Explain Breadth First Search Algorithm with example
+10
+CO2
+U
+Q3
+b) Explain Depth First Search Algorithm with example
+10
+CO2
+U

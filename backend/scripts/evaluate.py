@@ -1,9 +1,29 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+from IPython.display import display, Markdown
+from IPython.display import Image
 
+import google.generativeai as genai
+import pandas as pd
+import os
 
+# Step 1: Set the environment variable for your API key
+os.environ['GOOGLE_API_KEY2'] = 'AIzaSyBnc0piIW-Kwb4AdpUB2PBEKjNvY1vm3_A'
 
+# Step 2: Retrieve the API key from the environment variable
+GOOGLE_API_KEY2 = os.getenv('GOOGLE_API_KEY2')
 
+# Step 3: Configure the API key for your service
+genai.configure(api_key=GOOGLE_API_KEY2)
+model = genai.GenerativeModel(model_name="models/gemini-1.5-flash-latest")
+model2 = genai.GenerativeModel('models/gemini-1.5-pro-latest')
+
+transcript = ''
+text = open(transcript, 'r')
+chat = model.start_chat(history=[])
+
+chat.send_message(["the provided pdf contains a questionaire on {subject}, you will be provided answers to these questions from multiple students which you have to evaluate",text])
+chat.send_message(["evaluate this sheet as per the question paper given above considering that each question is not dependent on each other and evaluate accordingly as per the given also take a note that Q1)is compulsory and Q2),Q3) are anyone type questions incase if both the parts of Q2 and Q3 are solved please check them both individually and evaluate carefully and given marks outoff 10 and consider that Q2and Q3 are of 10 marks for any one Question "])
 
 def generate_response(prompt: str):
     generation_config = {

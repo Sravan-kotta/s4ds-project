@@ -92,7 +92,7 @@ def init_api_keys():
     try:
         #os.environ["GOOGLE_CLOUD_PROJECT"] = "text-extraction-423214"
         #os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "./text-extraction-423214-fecf2dc6bb42"
-        os.environ['GOOGLE_CLOUD_API_KEY'] = 'AIzaSyBnc0piIW-Kwb4AdpUB2PBEKjNvY1vm3_A'
+        os.environ['GOOGLE_CLOUD_API_KEY'] = ''
         #credential_path = r'C:\Users\srava\Downloads\buoyant-nectar-436323-a8-9de786931b9e.json'
         #os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
         api_key = os.environ.get("GOOGLE_CLOUD_API_KEY")

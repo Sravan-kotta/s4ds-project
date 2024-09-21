@@ -8,7 +8,7 @@ import pandas as pd
 import os
 
 # Step 1: Set the environment variable for your API key
-os.environ['GOOGLE_API_KEY2'] = 'AIzaSyBnc0piIW-Kwb4AdpUB2PBEKjNvY1vm3_A'
+os.environ['GOOGLE_API_KEY2'] = ''
 
 # Step 2: Retrieve the API key from the environment variable
 GOOGLE_API_KEY2 = os.getenv('GOOGLE_API_KEY2')

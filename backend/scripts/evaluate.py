@@ -1,29 +1,31 @@
-from flask import Flask, request, jsonify
-from flask_cors import CORS
+
 from IPython.display import display, Markdown
 from IPython.display import Image
-
+import io
 import google.generativeai as genai
 import pandas as pd
 import os
+import PIL.Image
 
+def init_model():
 # Step 1: Set the environment variable for your API key
-os.environ['GOOGLE_API_KEY2'] = ''
+    os.environ['GOOGLE_API_KEY2'] = 'AIzaSyBnc0piIW-Kwb4AdpUB2PBEKjNvY1vm3_A'
 
-# Step 2: Retrieve the API key from the environment variable
-GOOGLE_API_KEY2 = os.getenv('GOOGLE_API_KEY2')
+    # Step 2: Retrieve the API key from the environment variable
+    GOOGLE_API_KEY2 = os.getenv('GOOGLE_API_KEY2')
 
-# Step 3: Configure the API key for your service
-genai.configure(api_key=GOOGLE_API_KEY2)
+    # Step 3: Configure the API key for your service
+    genai.configure(api_key=GOOGLE_API_KEY2)
+    
+
+#transcript = ''
+#text = open(transcript, 'r')
+#chat = model.start_chat(history=[])
+init_model()
 model = genai.GenerativeModel(model_name="models/gemini-1.5-flash-latest")
 model2 = genai.GenerativeModel('models/gemini-1.5-pro-latest')
-
-transcript = ''
-text = open(transcript, 'r')
-chat = model.start_chat(history=[])
-
-chat.send_message(["the provided pdf contains a questionaire on {subject}, you will be provided answers to these questions from multiple students which you have to evaluate",text])
-chat.send_message(["evaluate this sheet as per the question paper given above considering that each question is not dependent on each other and evaluate accordingly as per the given also take a note that Q1)is compulsory and Q2),Q3) are anyone type questions incase if both the parts of Q2 and Q3 are solved please check them both individually and evaluate carefully and given marks outoff 10 and consider that Q2and Q3 are of 10 marks for any one Question "])
+#response = chat.send_message(["the provided pdf contains a questionaire on ai, you will be provided answers to these questions from multiple students which you have to evaluate"])
+#chat.send_message(["evaluate this sheet as per the question paper given above considering that each question is not dependent on each other and evaluate accordingly as per the given also take a note that Q1)is compulsory and Q2),Q3) are anyone type questions incase if both the parts of Q2 and Q3 are solved please check them both individually and evaluate carefully and given marks outoff 10 and consider that Q2and Q3 are of 10 marks for any one Question "])
 
 def generate_response(prompt: str):
     generation_config = {
@@ -43,14 +45,21 @@ def generate_response(prompt: str):
         print("Error generating response:", exception)
 
 
-if __name__ == "__main__":
-    with open(output_file_path, 'a', encoding='utf-8') as text_file:
-        x = text_file.write(extracted_text)
-    init_api_keys()
-    process_all_folders('./data/processed', './data/results')
-    prompt1 = input("the provided pdf contains a questionaire on {subject}, you will be provided answers to these questions from multiple students which you have to evaluate")
-    prompt2 = input(x)
-    prompt3 = input('After each question, the scale on which the answer is to be evaluated is provided, for example: "Exaplin features of CBC 5" the 5 indicated the answer is to be marked on a scale of 0 to 5')
-    prompt4 = input("these are the answers. Everytime you encounter a section with studentdetails, note that the answers of a student have ended and new sheet starts")
-    prompt = [prompt1,prompt2,prompt3,prompt4]
-    generate_response(prompt)
+def extract_text(image_path: str, output_file_path: str, model):
+    content = PIL.Image.open(image_path)
+    response = model.generate_content(["Provide the text as it is from the images as well as remove all the scribbled words in it.", content])
+    extracted_text = response.text
+    with open(output_file_path, 'a') as text_file:
+        text_file.write(extracted_text)
+def process_all_folders(folder: str, result_folder: str):
+    folder_base = os.path.basename(folder)
+    result_file_path = os.path.join(result_folder, f'{folder_base}.txt')
+    return result_file_path
+
+x = process_all_folders('backend/data/processed/white_box_merged', 'backend/data/results')
+for file in os.listdir('backend/data/processed/white_box_merged'):
+    path = os.path.join('backend/data/processed/white_box_merged', file)
+    extract_text(path, x, model)
+
+
+

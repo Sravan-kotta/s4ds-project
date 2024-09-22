@@ -1,0 +1,93 @@
+**White-Box Testing Report**
+
+**Project Overview: AI-Based Security Camera System**
+
+In an era marked by increasing security concerns and the persistent need for more advanced and proactive surveillance solutions, this research introduces a ground breaking project: an AI-Powered Security Camera System specifically designed to augment safety and security in a variety of settings. With the prevalence of AI and computer vision technologies, this system harnesses the power of the YOLO (You Only Look Once) object detection algorithm, enabling real-time identification and response to incidents, including accidents and suspicious activities. This project represents a significant stride toward an enhanced and automated approach to security surveillance.
+
+The contemporary landscape is characterized by a myriad of security challenges, ranging from accidents with potentially severe consequences to the potential for malicious activities that can threaten lives and property. Conventional surveillance systems have typically relied on human intervention for threat identification and response, often resulting in delayed reactions and missed incidents. In contrast, the AI-Powered Security Camera System presented here bridges this gap by combining state-of-the-art technologies into a unified, intelligent surveillance system. 
+
+**Tested Codebase:** The Python code provided for object detection using YOLOv8, integrated with Streamlit for GUI.
+
+**Testing Objectives:** The primary objectives of white-box testing for this project were to:
+
+1. Verify the correctness of the YOLO-NAS object detection functions.
+2. Ensure proper handling of different input scenarios and error conditions.
+3. Validate the functionality of the Streamlit application, including GUI elements.
+
+**Testing Strategies:** White-box testing for this project involved a combination of unit testing, boundary testing, error handling testing, integration testing, and functional testing. 
+
+**Test Environment**
+
+- Operating System: Windows 10
+- Python Version: 3.7
+- Testing Framework: unittest
+
+**Test Cases and Results**
+
+**'image_detection' Function**
+
+**Test Case 1:** Valid Image Input
+
+- Input: A valid image (e.g., 100x100 pixels) with a confidence threshold of 0.65.
+- Expected Output: The function should return an annotated image. 
+- Result: The test passed successfully. 
+Test Case 2: Invalid Image Input
+- Input: An invalid image (None) with a confidence threshold of 0.65.
+- Expected Output: The function should raise a 'TypeError'.
+- Result: The test passed successfully, as the function correctly raised a 'TypeError' for an invalid input.
+
+Additional Test Cases
+- Additional test cases were executed to cover different image sizes, formats, and confidence thresholds.
+- All test cases produced the expected results, indicating that the function handles various scenarios correctly.
+
+'video_detection' Function
+
+Test Case 1: Valid Video Input
+- Input: A valid video file with a confidence threshold of 0.65.
+- Expected Output: The function should process frames and return an annotated video.
+- Result: The test passed successfully.
+
+Test Case 2: Invalid Video Input
+- Input: An invalid video file (None) with a confidence threshold of 0.65.
+- Expected Output: The function should raise an exception or handle the error gracefully.
+- Result: The test passed successfully, as the function correctly handled the error condition.
+
+Additional Test Cases
+- Additional test cases were executed to cover different video formats, confidence thresholds, and error scenarios.
+- All test cases produced the expected results, indicating that the function handles various scenarios correctly.
+
+Streamlit Application ('main' Function)
+
+Test Case 1: Application Behavior 
+- Input: Execution of the Streamlit application in different modes (e.g., "About App," "Run on Image," "Run on Video").
+- Expected Output: The application should behave as expected, including responding to user interactions and displaying results.
+- Result: The application behaved as expected in all modes, meeting functional requirements. 
+**Test Case 2: Edge Cases**
+
+- **Input:** Testing with extreme input values (e.g., very large image files or videos).
+- **Expected Output:** The application should handle edge cases gracefully without crashing.
+- **Result:** The application handled edge cases without issues, indicating robustness.
+
+**Test Case 3: Error Handling**
+
+- **Input:** Testing with invalid file uploads or incorrect user interactions.
+- **Expected Output:** The application should display appropriate error messages or handle errors gracefully.
+- **Result:** The application correctly displayed error messages and handled errors, meeting user expectations. 
+
+**Conclusion:** White-box testing of the Object Detection with YOLO-NAS project confirmed the correctness of the code and the robustness of the Streamlit application. All test cases passed successfully, demonstrating that the code functions as intended and handles various scenarios and error conditions effectively.
+
+**Recommendations:** Based on the white-box testing results, the following recommendations are made:
+
+1. Continue to conduct thorough testing, including regression testing, when making code changes or updates.
+2. Consider further test coverage for exceptional scenarios to ensure the application remains robust. 
+3. Document the testing process and results for future reference.
+
+**Sign-Off**
+
+**Tester:** Saahil Barve
+
+Akshay Kesarkar
+
+Heet Gala
+
+**Date:** 1<sup>st</sup> October, 2023

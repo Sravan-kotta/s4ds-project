@@ -1,0 +1,674 @@
+Name: **Adwait Pitlamude**                                                                                                    Candidate Roll No. **16** (in figures)
+Date: **1/9/22**                                                                                                                  Branch/Semester **ETRX/VII**
+Examination: **IA-2**                                                                                                              
+Subject: **Artificial Intelligence**
+
+**Q1 a)** 
+**Turing test approach**
+1. Turing test approach is a kind of approach in which the computer is acquaintance with reading comprehension, writing materials and languages.
+2. Either the Turing test approach is completely fed and accepted by computer when the investigators are unable to grasp the content whether it is made by computer or a person.
+3. Intelligence plays important role whether a Computer can think in a way as the person approach considering the test.
+4. There are things to consider for computer to proceed to Turing test approach
+   1) NLP which is language processing plays important role.
+   2) Taking ample amount of data through online source making this approach more feasible. 
+   3) Turing test approach is a type of continuous feeding approach as data provided is not the only possible way to tackle the problem. 
+8/21
+Agent - The Agent in AI
+Works as decision
+Makes often
+Sensing the environment Using
+Sensors. 
+
+Agent
+How it 
+Works
+How is 
+the 
+Environment
+now
+How it is done
+What is 
+My Goal 
+Condition 
+like...
+What 
+Needs 
+to be done 
+Perceive
+Sensors
+ENVIRONMENT
+Actions
+->
+Goal Based Agent Diagram
+
+Goal Based Agent Has a Intentional Approach towards its Goal. i.e 
+Goal is already Saved in the Agent.
+Hence, the Agent Knows what to achieve as a Goal.
+Goal Based Agent Senses the Environment and takes action with respects to its Goal i.e. Action are taken in order to reduce the distance from its Goal.
+It has the Knowledge of Environment in its Intentional Knowledge.
+Also, it perceives what is happening in the Environment. 
+Goal Based Approach is Used By Various Applications. 
+
+The Automatic Cleaners is the Best Sample for Goal Based Agent
+The Vacuum Cleaner has the goal of Not having a Single dust Particle in the Mapped Room. 
+The Automatic Vacuum Cleaners divides the Room into 100 Squares 
+Now, its goal is to Keep Each Square Box Clean.
+Hence, the Automatic Vacuum Cleaners will Approach its By Cleaning the Squares Below it. 
+This Approach Will Reduce Each Square it travels from The Mapped 100 Squares. 
+Page No. 4
+Automatic
+The Vacuum Cleaner will approach towards its goal of Cleaning Entire 100 Squares one by one
+Each Square it means its distance is reduced by one towards its goal. 
+This will in turn required to move and Clean each square one by one. 
+
+Automatic
+Vacuum
+Cleaners 
+Goal =====> To clean
+                         Entire
+                         Room
+===== The
+           Room is 
+           Mapped 
+           in 100 Square
+           
+           Actions
+           
+Cleans Each
+Square
+to achieve 
+goal. 
+8-3(A) Depth First Search Algorithm is Used Where Some Extensive Computation is Required.
+- DFS Uses Very High Memory allocation.
+- Also, it Requires to Approach on Stack. Memory/Data Structure
+- The Data is Stored and Feth Using Stack Approach.
+- Stack Approach refers to "LIFO" "Last In- First Out"
+- The DFS is good for Applications where the Goal is Fast Reached 
+. Eg- Facial Recognition System.
+     - It uses DFS Approach as where the data is Stored in the form of Stack. 
+     - The data of All the faces in (cummalative) will be Stored in Stacks.
+     - Each time the Person Comes for Facial Recognition the Algorithm Starts Searching the Datasets looking for the Similar faces.
+     - The Searching/Sorting Takes Place inside a Stack of datasets acquired
+     - The Goal of the Facial Recognition System is to match the Originally captured datasets to the Real time Face displayed with 100% Accuracy.
+     - But it cannot achieve the 100% accuracy So, can it achieve 80-90% at max.
+     - But the Algorithm tries to Maximize its accuracy Each time it Recognizes the face.
+     - The DFS Plays an important Role in order to try and achieve its goal.
+Page No. 6
+
+Facial Recognition
+Algorithm
+
+Sends
+
+Input
+(Face)
+Real time or Stored
+
+Searches
+Datasets
+
+:.|X| Not Matched
+
+Matched
+=> \[ ]
+Accuracy
+>100% 
+|                       | Performance                                  | Environment                              | Action                                                     | Sensors                                                        |
+| --------------------- | -------------------------------------------- | ---------------------------------------- | -------------------------------------------------------- | ------------------------------------------------------------- |
+| Satellite Image Analysis System | - Quality of Image. <br> - Capture time <br>- Zoom                  | Space <br>No Gravity                     | To Click <br> Images                                     | Camera <br> Solar Panel <br> Fos Power                       |
+| Refinery Control - les  | - Adequate of <br> Input and Output  <br>Pressure  <br> - Check Leaks <br> - Effectiveness <br> in managing <br> tank filling       | Factory  <br> Environment  <br>With <br> Pipes and tanks                    | -To regulate  <br> Pressure <br> valve <br> - level <br> tanks <br> - Surely <br> - Check for <br> impurities. | - pressure <br> - level <br> - Viscosity <br> - Heat       |
+| E-Commerce System     | - To manage <br> Orders Effectively <br> - Traffic  <br> Management <br> - dispatch <br> System                | - Data Centers <br> - Delivery hubs <br> -Selles Shops,  <br> - etc.             | - to Bypass <br> Excess Orders <br> - to Sellers <br> - Collect <br> - fastest <br> Sellers as <br> well as <br> Customers <br> About <br> Ordered <br> Status                      | - Barcode  <br> Scanners <br> - product <br> capture <br> (Camera)                                                  |
+| Blood testing System | - Accuracy of  <br> test Results <br> - Time to perform  <br> Each test      | - Hospitals,  <br> Clinics, etc        | - To Perform <br> acute  <br> analysis  <br> of Blood | - Microscope  <br> - Camera  <br> - Zoom(camera)           |
+| Automatic <br> Face Recognizer   | - to perform  <br> at high accuracy  <br> in Face <br> Matching             | - Schools, /colleges  <br> - Offices, etc | -To Match  <br> realtime  <br> face to the <br> Datasets | - Camera                                                     |Name: Bhavesh Mahatre
+
+Date: 27/7/22
+
+Examination: Test 1
+
+Branch/Semester: ETRX/ III
+
+Subject: Artificial Intelligence
+
+Question No. | 1a | 1b | 2a | 2b | 3a | 3b
+------- | -------- | -------- | -------- | -------- | --------| --------
+Maximum Marks | 5 | 5 | 5 | 5 | 5 | 5
+Marks Obtained |  | 05 |  |  |  | 08
+
+|       | BFS                | DFS                                                                                               |
+| :---- | :------------------ | :------------------------------------------------------------------------------------------------ |
+| (a)   |                     |                                                                                                    |
+| (b)   |                     |                                                                                                    |
+|       |                     |                                                                                                    |
+| Abbreviation  | BFS stands for breadth First search | DFS stands for depth First search                                                               |
+|       |                     |                                                                                                    |
+| Definition     | BFS approach is to search is from root node and then neighbours. we go on searching by one depth at a time.      | DFS approach is to start search from root and then search by branching different nodes from different nodes until reaching the node with no further connection.  |
+|       |                     |                                                                                                    |
+| Data type     | BFS uses queue Structure        | DFS has stack structure.                                                                          |
+|       |                     |                                                                                                    | 
+Page No. 2
+
+|            |                                                                                                                              |                                                                                                                          |
+|------------|-------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| Suitable | This approach is suitable for the applications where the decisions does not affect later.                           | This approach is suitable where consecutive decisions matter i.e. in game AI like chess, etc. |
+| Speed    | BFS is comparatively slower than DFS.                                                                                      | DFS is faster than BFS                                                                                                  |
+| Suitable | BFS is good when decision node is close to the root node.                                                                 | DFS is good when tree has many branches and decision node is far from root node                                            |
+
+|            |                                                                                                                              |                                                                                                                          |
+|------------|-------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+Name: Adwait Pitalmurde  Candidate Roll No. 16
+Date: 1/3/22
+Examination: IA-2 Branch/Semester: ETRX/VII
+Subject: Artificial Intelligence
+Question No. 1. a 1. b 2. a 3
+Maximum Marks 5 5 5 5 
+Marks Obtained 03  - 10 10 - 
+
+Q1 a) Turing test approach.
+     1) Turing test approach is a kind of approach 
+      in which the computer is acquaintance with reading 
+       comprehension, writing materials and languages.
+     2) Either the Turing test approach is completely 
+      fed and accepted by computer when the investigators 
+      are unable to grasp the content whether it
+       is mode by Computer or a person.
+      3) Intelligence plays important role whether a
+       Computer can think in a way as the person
+       approach considering the test.
+     4) There are things to consider for computer 
+        to proceed to Turing test approach.
+      1) NLP which is language processing plays important
+       role.
+      2) Taking ample amount of data through online
+      source making this approach more feasible.
+      3) Turing test approach is a type of 
+      continuous feeding approach as data provided
+       is not the only possible way to tackle the 
+      problem. 
+8/2/21
+
+Agent - The Agent in AI 
+works as decision 
+Makes after 
+Sensing the Environment Using 
+Sensors.
+
+<center>Agent</center>
+<center>How it </center><center>How's</center> <center>Perceive</center> 
+<center>Works</center> <center>the</center><center>Sensors</center>
+<center></center> <center>Environ</center>
+<center></center> <center>ment</center>
+<center>How its done</center> <center>Whats</center> <center>E</center>
+<center></center> <center>My goal</center><center>N</center>
+<center>Condition</center><center>What</center><center>V</center>
+<center>like..</center> <center>Needs</center><center>I</center><center>Athons</center> <center>-></center>
+<center></center><center>to be done</center><center>R</center>
+<center></center><center>O</center>
+<center></center><center>N</center>
+<center></center><center>M</center>
+<center></center><center>E</center>
+<center></center><center>N</center>
+<center></center><center>T</center>
+Goal Based Agent Diagram - 
+
+Goal Based agent Has a Intentional Approach Towards its Goal. i.e 
+Goal is already Saved in the agent.
+Hence, the Agent Knows what to achieve as a Goal
+Goal Based Agent Senses the Environment and takes action With 
+respects to its Goal i.e. Action are taken in order to reduce 
+the distance from its Goal.
+It has the Knowledge of Environment  in its Intentional Knowledge.
+Also, it perceives what is happening in the Environment. 
+Goal Based Approach is Used By Various Applications.
+ Automatic 
+The Vaccum Cleaners is the Best Sample for Goal Based Agent
+The Vaccum Cleaner has the goal of Not having a Single dust 
+Particle in the Mapped Room.
+The Automatic Vacuum Cleaners divides the Room into 100 Squares
+Now, its goal is to Keep Each Square Box Clean.
+Hence, the Automatic Vacuum Cleaners Will Approach it By 
+Cleaning the Squares Below it.
+This Approach Will Reduce Each Square it travels from 
+the Mapped 100 Squares. 
+Name: Adwait Pitalmurde               Candidate Roll No. 16 (in figures)
+
+Date: 1/3/22                                   Branch/Semester: ETRX/VII
+Examination: IA-2
+Subject: Artificial Intelligence
+
+Q1) a) Turing test approach.
+     1) Turing test approach is a kind of approach
+         in which the computer is acquaintance with reading 
+         comprehension, writing materials and languages.
+     2) When the Turing test approach is completely 
+         fed and accepted by computer when the invigilator 
+         are unable to grasp the content whether it 
+         is mode by computer or a person.
+     3) Intelligence plays important role whether a
+         Computer can think in a way as the person
+         approach considering the test.
+     4) There are things to consider for computer 
+         to proceed to Turing test approach
+         1) NLP which is language processing plays important
+         role.
+     5) Taking ample amount of data through online
+         source making this approach more feasible.
+     6) Turing test approach is a type of 
+         continuous feeding approach as data provided
+         is not the only possible way to tackle the
+         problem.
+Page No. 3
+
+8/2/21
+
+Agent - The agent in AI, works as decision Maker after sensing the Environment Using Sensors.
+
+Agent
+How the world works
+How it should act
+Condition like ...
+
+How's the Environment right now?
+What is my goal
+What needs to be done?
+
+Perceiv sensors
+ENVIRONMENT
+Actions --> 
+
+Goal Based Agent Diagram - 
+
+- Goal Based agent Has a Internal Approach towards its Goal, ie. Goal is already Saved in the agent. 
+- Hence, the agent Knows what to achieve as a Goal
+- Goal Based Agent Senses the Environment and takes action with respects to its Goal ie. Action are taken in order to reduce the distance from its Goal.
+- It has the knowledge of Environment within its Internal Knowledge.
+- Also, it perceives what is happening in the Environment.
+- Goal Based Approach is Used By Various Applications. 
+- Automatic
+- The Vaccum Cleaners is the Best Sample for Goal Based Agent
+- The Vaccum Cleaner has the goal of Not having a Single dust Particle in the Mapped Room. 
+- The Automatic Vacuum Cleaners divides the Room into 100 Squares.
+- Now, its goal is to Keep Each Square Box Clean. 
+- Hence, the Automatic Vacuum Cleaners will Approach its By Cleaning the Squares Below it. 
+- This Approach will Reduce Each Square it travels from the Mapped 100 Squares. 
+Page No. 4
+
+Automatic
+The Vacuum Cleaner Will Approach towards its goal of Cleaning Entire 100 Squares one By one
+Each Square, it Means its distance is reduced By one towards its goal.
+This Will intern Required to Move and Clean Each Square one by one.
+
+Automatic
+Vacuum
+Cleaner   
+
+Goal  ---->  To clean
+                 Entire 
+                 Room. 
+
+----> The 
+       Room is
+       Mapped
+       in 100 Square
+
+ Actions
+       Cleans Each
+       Square 
+       to achieve
+       goal. 
+Page No. 5
+8:36| Depth First Search Algorithm is Used Where Some Extensive Computation is Required. 
+- DFS Uses Very High Memory allocation.
+- Also, it Requires to Approach on Stack. Memory/ Data Structure
+- The Data is Stored and Feteh Using Stack Approach. 
+- Stack Approach refers to "LIFO" "Last In- First Out"
+- The DFS is good for Applications where the Goal is Fast Reached
+ *Eg:- Facial Recognition System. 
+   - It uses DFS Approach as where the data is Stored in the form of Stack. 
+   - The data of All the faces in (ummalative  Will be Stored. in Stacks, 
+   - Each time the Person Comes for Facial Recognition the Algorithm Starts Searching the Datasets looking for the Similar faces. 
+  - The Searching/Sorting Takes Place inside a Stack of datasets acquired 
+  - The Goal of the Facial Recognition System is to match the Originally captured datasets to the Real time Face displayed with 100% Accuracy. 
+   - But it Cannot achieve the 100% accuracy So, Can it achieve 80-90% at max.
+  - But the Algorithm tries to Maximize its accuracy Each time it Recognizes the face.
+  - The DFS Plays an important Role  in order to try and achieve its goal. 
+Name: **Advait Pitale** 
+Date: 1/3/22
+Examination: IA-2
+Subject: Artificial Intelligence
+Branch/Semester: ETRX/VII
+
+Q1 a) Turing test approach.
+     1. Turing test approach is a kind of approach in which the computer is acquaintance with reading comprehension, writing materials, and languages.
+     2. Either the Turing test approach is completely fed and accepted by computer when the investigator are unable to grasp the content whether it is made by computer or a person.
+     3. Intelligence plays an important role, whether a computer can think in a way as the person approach considering the test.
+     4. There are things to consider for computer to proceed to Turing test approach.
+        1. NLP which is language processing plays important role.
+        2. Taking ample amount of data through online source making this approach more feasible.
+     5. Turing test approach is a type of continuous feeding approach as data provided is not the only possible way to tackle the problem.
+8/21
+
+Agent - The Agent in AI
+
+Works as decision maker
+
+Makes after sensing the environment. Using Sensors.
+
+Agent 
+/How it works/
+/How it is done/
+/Condition like ... /
+How's the environment?
+What's my goal?
+What Needs to be done?
+Perceive Sensors 
+Actions ->
+ENVIRONMENT
+
+goal Based Agent Diagram - 
+
+Goal Based agent Has a Internal Approach towards its Goal. i.e Goal is already Saved in the Agent. 
+
+Hence, the Agent Knows what to achieve as a Goal
+
+Goal Based Agent Senses the Environment and takes action With respects to its Goal i.e. Action are taken in order to reduce the distance from its Goal. 
+
+It has the Knowledge of Environment in its internal Knowledge. 
+
+Also, it perceives what is happening in the Environment.
+
+Goal Based Approach is Used By Various Applications. 
+
+The Automatic Vacuum Cleaners is the Best Sample for Goal Based Agent 
+
+The Vacuum Cleaner has the goal of Not having a Single dust Particle in the Mapped Room.
+
+The Automatic Vacuum Cleaners divides the Room into 100 Squares.
+
+Now, its goal is to Keep Each Square Box Clean. 
+
+Hence, the Automatic Vacuum Cleaner will Approach its By Cleaning the Squares Below it.
+
+This Approach Will Reduce Each Square it travels from the Mapped 100 Squares.
+Page No. 4
+
+Automatic
+- The Vacuum Cleaner Will Approach towards its goal of Cleaning Entire 100 Squares one by one.
+- Each Square: it Means its distance is reduced by 'One' towards its goal.
+- This will intern Required to Move and Clean Each Square one by one.
+
+Automatic Vacuum Cleaner -> Goal -> To clean Entire Room -> The Room is Mapped in 100 Square
+                                                                                    || Actions
+                                                                                Cleans Each
+                                                                                 Square
+                                                                                 to achieve
+                                                                                 goal.
+8-31
+Depth First Search Algorithm is Used Whose Some Extensive Computation is Required. 
+DFS Uses Very High Memory allocation.
+Also, it Requires to Approach on Stack.Memory/Data Structure
+The Data is Stored and Feth Using Stack Approach.
+Stack Approach refers to "LIFO" "Last In - First Out".
+The DFS is good for Applications whose the Goal is Fast Reached
+
+Eg: - Facial Recognition System.
+- It uses DFS Approach as where the data is Stored in the form of Stack
+- The data of All the faces in (ummalative) will be Stored. in Stacks, 
+- Each time the Person Comes for Facial Recognition the Algorithm Starts Searching the Datasets looking for the Similar faces.
+- The Searching/Sorting Takes Place inside a Stack of datasets acquired. 
+- The Goal of the Facial Recognition System is to match the Originally captured datasets to the Real-time Face displayed with 100% Accuracy.
+But it Cannot achieve the 100% accuracy. So, can it achieve 80-90% at max.
+- But the Algorithm tries to Maximize its accuracy Each time it Recognizes the face. 
+- The DFS Plays an important Role  in order to try and achieve its goal. 
+Page No. 6
+
+Facial Recognition Algorithm 
+Sends
+
+Input (Face)
+Real time or Stored 
+
+Searches 
+Datasets --> Matched --> Accuracy 
+: | X  Not Matched 
+|              | Performance                                      | Environment                        | Action                                 | Sensors                                |
+|--------------|----------------------------------------------------|--------------------------------------|----------------------------------------|------------------------------------------|
+| Satellite Image <br> Analysis System | - Quality of <br> &nbsp;&nbsp;&nbsp; Image. <br> - Capture time <br> - Zoom                       | Space <br> No Gravity                | To Click <br> Images                    | Camera <br> Solar Panel <br> For Power |
+| Refinery Control- <br> les           | - Adequate of <br> &nbsp;&nbsp;&nbsp; Input and Output <br> &nbsp;&nbsp;&nbsp; Pressure  <br> - Check Leaks <br> - Effectiveness <br> &nbsp;&nbsp;&nbsp; in managing <br> &nbsp;&nbsp;&nbsp; tank filling  | Factory <br> Environment <br> With <br> Pipes and tanks | - To regulate <br> &nbsp;&nbsp;&nbsp; Pressure <br> &nbsp;&nbsp;&nbsp; valve <br> - level <br> tanks <br> - Safety <br> - Check for <br> &nbsp;&nbsp;&nbsp; impurities | - pressure <br> - level  <br> - Viscosity  <br> - leak                               |
+| E-Commerce  <br> System         | - To manage <br> &nbsp;&nbsp;&nbsp; Orders Effectively <br> - Traffic <br> &nbsp;&nbsp;&nbsp; Management <br> - dispatch <br> &nbsp;&nbsp;&nbsp; System                  | - Data Centers <br> - Delivery hubs <br> - Seller Shops, <br> &nbsp;&nbsp;&nbsp; etc.        | - to Bypass <br> &nbsp;&nbsp;&nbsp; Excess Orders <br> - to Sellers <br> &nbsp;&nbsp;&nbsp; (atleast  <br> &nbsp;&nbsp;&nbsp; sellers <br> &nbsp;&nbsp;&nbsp; who <br> &nbsp;&nbsp;&nbsp; bothers <br> &nbsp;&nbsp;&nbsp; about <br> &nbsp;&nbsp;&nbsp; Customer <br> &nbsp;&nbsp;&nbsp; Order <br> &nbsp;&nbsp;&nbsp; Status                | - Barcode <br> &nbsp;&nbsp;&nbsp; Scanner <br> - Product <br> &nbsp;&nbsp;&nbsp; capture <br> &nbsp;&nbsp;&nbsp; (Camera)                           |
+| Blood testing <br> System        | - Accuracy of <br> &nbsp;&nbsp;&nbsp; test results <br> - Time to perform <br> &nbsp;&nbsp;&nbsp; Each test     | - Hospitals,  <br> Clinics, etc     | - To Perform <br> &nbsp;&nbsp;&nbsp; acute <br> &nbsp;&nbsp;&nbsp; analysis <br> &nbsp;&nbsp;&nbsp; of blood                     | - Microscope <br> - Camera <br> - Zoom(camera)                         |
+| Automatic <br> Face Recognizer  | - to perform <br> &nbsp;&nbsp;&nbsp; at high accuracy <br> - in Face <br> &nbsp;&nbsp;&nbsp; Matching                 | - Schools, Colleges <br> - Offices, etc       | - To Match <br> &nbsp;&nbsp;&nbsp; realtime <br> &nbsp;&nbsp;&nbsp; face to the <br> &nbsp;&nbsp;&nbsp; Datasets                 | - Camera                                 |
+Name: Bhavesh Mohite 
+Date: 27/9/22
+Examination: Test 1
+Branch/Semester: ETRX / III
+Subject: Artificial Intelligence 
+
+
+|           |      |      |      |       | Total with Sign. |
+|-----------|:----:|:----:|:----:|------:|-----------------|
+| Question No |  1a  |  1b  |  2   | 3     |                  |
+|             |  a   |  b   | a b  | a b    |                  |
+| Maximum Marks | 5    | 5    | 5    | 5     |      13          |
+| Marks Obtained  |   -   |  05  |   -   |  08    |       -         |
+
+
+
+
+|           | BFS                  | DFS                                                                                             |
+|:----------|:---------------------|:-------------------------------------------------------------------------------------------------|
+|           |                      |                                                                                                 |
+| Abbreviation| BFS stands for breadth | DFS stands for depth                                                                            |
+|           | First search         | First search                                                                                      |
+|           |                      |                                                                                                 |
+| Definition | BFS approach is    | DFS approach is to                                                                               |
+|           | to search is from root| start search from root                                                                          |
+|           | node and then search |  node and then search root and search                                                             |
+|           | we go on searching by|  by branching different                                                                        |
+|           | one depth at a time. | from different nodes                                                                             |
+|           |                      | until reaching the node                                                                            |
+|           |                      | with no further connection                                                                        |
+|           |                      |                                                                                                 |
+| Data type | BFS uses queue       | DFS has stack structure                                                                         |
+|           | structure            | type.                                                                                              | 
+Page No. 2
+
+| Suitable | This approach is suitable for the applications where the decisions does not affect later. | This approach is suitable where decision has consecutive dependencies matter i.e.; in game AI like chess etc. | 
+| ------ | ------ | ------ |
+| Speed | BFS is comparatively slower than DFS. | DFS is faster than BFS. |
+| Suitable Situations | BFS is good when decision node is close to the root node. | DFS is good when tree has many branches and decision node is far from root node. | 
+(Q3)
+(a) i) BFS algorithm which stands for Breadth First Search algorithm is the algorithm used for decision making and is applied on binary trees. 
+ii) Breadth first search this algorithm initiates on root node, and searches one depth at a time.
+iii) Starting from the root node, it will search all nodes connected to the root node.
+iv) After this order algorithm will search depth one depth level at a time, till it gets to the last node.
+v) This algorithm is relatively slower as it search as depth rise with depth.
+vi) This approach is suitable for applications with to having decision trees with low depth.
+vii) Lets consider decision tree as given above.
+viii) BFS algorithm will start from root node which is topmost node '0'.
+ix) Then it will search node A and B, when done it will search the lower depth level, which have C, G and G. when done it will reach onto last G, and will terminate. 
+Page No. 4
+
+(x) BFS algorithm. search. 
+(O) -> (A) -> (C) -> (G)
+^       |
+|       |
++->(B)---+ 
+Name: VIRAL SHETH
+Date: 07/09/2022
+
+Examination: Term Test-1
+Subject: Artificial Intelligence
+Branch/Semester: Electronics
+
+Question No. 1a   1b   2     3
+Maximum Marks 5      5      5     5
+Marks Obtained 05     05     08    07
+
+Q1. a) Turing Test approach:
+
+-> Alan Turing (1950) found Turing Test.
+- It is a kind of experiment which indicates the quality of Artificial Intelligence. 
+- In this test, there is an interrogator, a person, and a computer. 
+- First, let us see a diagram: 
+
+[Diagram of Turing Test with Person, Interrogator, and Computer] 
+
+Fig. Turing Test approach approach. 
+- Interrogator is placed different room / setup so he/she cannot physically view either person. 
+Page No. 2
+Q1)b)
+BFS                                                                     DFS
+→① BFS stands for Breadth                      ① DFS stands for depth
+        first search.                                      first search.
+② Transverse in form                         ② Transverse in form 
+of tree level pattern.                      of tree depth pattern or
+                                                                sub-tree pattern.
+③ Breadth first search is                ③ Depth first search
+in form of queue.                           is in form of stack.
+④ Uses more memory                      ④ Uses less memory 
+as compared to DFS.                  
+⑤ No Backtracking is                    ⑤ Backtracking is done
+required.                                           in DFS
+⑥ Does not get stuck in                ⑥ Gets stuck in infinite 
+infinite loop.                                   loop.
+⑦ Optimal in finding                   ⑦ Not optimal in finding
+shortest distance.                       shortest distance. 
+⑧ If the distance between          ⑧ If the distance between 
+source and target is                source and target is
+less, then BFS is                     large, then DFS is
+preferable.                               preferable.
+on computer.
+Then a quiz is send to both intelligent computer and person
+Quiz contains question like 'are you a computer'?
+Computer can intentionally send wrong answers to interrogates to prove that it is a human.
+After the quiz if interrogator can tell that who is computer and who is person by reviewing responses, Computer fails the test 
+But if interrogator cannot detect which one is human based on responses, computer passes the test and can be proved that it has Human Intelligence.**(b)**
+| BFS | DFS |
+|---|---|
+| 1. It stands for Breadth First Search Algorithm. | 1. It stands for Depth First Search. |
+| 2. Data Structure used is Queue. | 2. Data Structure used is Stack. |
+| 3. It uses First In First Out (FIFO) approach. | 3. It uses Last In First Out (LIFO) approach. | 
+| 4. Shallow node | 4. Depth node. |
+| 5. It is Complete | 5. It is not Complete. |
+| 6. Time complexity is O(V+E) where V is vertex and E is edge. | 6. Time complexity in DFS is also O(V+E). |
+| 7. BFS is optimal | 7. DFS is not optimal |
+| 8. No Backtracking | 8. Backtracking. |
+| 9. It is used when the desired state is close to origin node. | 9. It is used when desired state is far and depth deep from origin node. |
+| 10. Slow | 10. Fast | 
+Page No. 4 
+Q2. a) Describe Goal-based agent with example.
+
+-> Goal-based agent: 
+
+<div align="center">
+<img src="https://i.imgur.com/1t9tZ58.jpg"  width="500" height="300">
+</div>
+
+. A Goal based agent is a type of agent.
+. It is better than simple-reflex and model-reflex agent.
+. Goal is very important aspect in life.
+. If a person has goal in life, than it can help him/her in decision making at a specific 
+moment of time. 
+• With the help of Goal, there is saving of time on outliers. 
+
+Now, in AI,
+• The agent perceives the environment and it also has past perception saved in memory. 
+• The above point is Model - reflex agent, now add a goal for the agent. 
+• With the help of experience of past perception and adding Goal clears the path ahead, the agent gets a definite path to the goal.
+
+Let us see an example,
+- A Mars lander wants to up the hill. 
+- So unlike, Model based reflex agent, now the agent will set a goal to up the hill. so it will set power consumed, fuel usage and the path. So the agent is learning and sets receiving browsed knowledge at every point of time.
+
+- Benefit:
+• An agent can learn in the path. 
+• It is easy to configure or update any setting as it already has past perception. 
+
+- Issue: 
+• Goal is not solution to everything, Goal can be achieved by relying on an easy, scalable path. 
+Page No. 6
+
+* There can be multiple paths to goal, 
+  so Goal based agent cannot choose the
+  correct one, here is where
+  Utility agents comes in use.
+Q3. 
+
+a) Breadth First Search Algorithm:
+
+- Breadth First Search Algorithm is a 
+Un-informed search technique in Artificial 
+Intelligence. It is also called as Blind
+technique. Reason is that a user can 
+explore data upto next stage but after which 
+the path is not determined. 
+
+- The Data Structure used in Queue.
+
+- It uses First in First out (FIFO) approach. 
+which means that if a state enters the queue 
+first, than it'll be the first one to get 
+out of queue.
+
+- Shallow Node :
+BFM completes the exploring whole node and 
+the moves to the next node so it 
+appears in the horizontal way of exploring.
+
+- BFM is optimal in nature as the 
+is guranteed that his state/node will be 
+explored. That's why BFM is complete.
+No data is left un explored.
+Page No. 8
+* Time Complexity of BFM is O(V+E)
+Here, V is Vertex.
+E is Edge.
+* There is no backtracking in this algorithm because Once the node is covered it doesn't enter the queue again. 
+Let us see an example: 
+
+[Image of a graph with nodes A, B, C, D, E, F, G. A is the root, B and C are children of A, D is the child of B, E and F are children of C, and G is the child of F.]
+
+Visited : _______
+Queue : _______
+
+Now, Let us start with A, so it can be moved to either B or C, let's continue with C, so now in queue it is ACB, if we remove F from queue then we explore node G. So ACBFG. Similarly after removing C from queue we proceed with node B which consists D and E, so-
+A ∅ C BFG DE
+After B, we move to F, but to F is not further divided into any node. 
+Candidate Roll No. 20
+
+Name: VIRAL SHETH
+Date: 07/09/2022
+Examination: Term Test-1 Branch/Semester: Electronics
+Subject: Artificial Intelligence
+
+So the queue looks like:
+
+Out <- [A] [C] [B] [F] [G] [D] [E] <- In
+
+The above figure shows that all the states are explored with the help of Breadth First Search algorithm. 
+Name : Dittha Dafda
+Date : 07/09/2022
+Examination : Test-1                     Branch/Semester : LYETRX
+Subject : Artificial Intelligence
+
+AI
+
+Q.1) Turing Test approach was an approach made by a renewed scientist Alan Turing.
+a. Ans. In this approach, the point of this approach was to show that the robot and human interrogation until the robot comes to know that he is an interogation with another robot.
+During this approach there was an interrogation between a robot and a human through computer.
+Live human at the place was not necessary because vibration for the robot in front was not required. This approach gave AI a new research to look after.
+Name: **Advait Pitalmurde**             Candidate Roll No. **16** (in figures)
+Date: **1/9/22**                                    Branch/Semester **EXTC-VII**
+Examination: **IA-2**
+Subject: **Artificial Intelligence** 
+
+**Q1 a)** 
+**Turing test approach.**
+
+1. **Turing test approach is a kind of approach in which the computer is acquaintance with reading comprehension, writing materials and languages.**
+2. **Either the Turing test approach is completely fed and accepted by computer when the investigators are unable to grasp the content whether it is made by computer or a person.** 
+3. **Intelligence plays important role, whether a computer can think in a way as the person approach considering the test.**
+4. **There are things to consider for computer to proceed to Turing test approach**
+     1. **NLP which is language processing plays important role.**
+     2. **Taking ample amount of data through online source making this approach more feasible.**
+     3. **Turing test approach is a type of continuous feeding approach as data provided is not the only possible way to tackle the problem.**

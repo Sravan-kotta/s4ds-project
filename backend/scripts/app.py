@@ -3,6 +3,7 @@ from flask_cors import CORS
 from werkzeug.utils import secure_filename
 from werkzeug.datastructures import  FileStorage
 import pymupdf
+import PIL.Image
 import os
 import io
 import time
@@ -59,12 +60,15 @@ def taker():
     genai.configure(api_key=GOOGLE_API_KEY2)
     model2 = genai.GenerativeModel(model_name="models/gemini-1.5-flash-latest")
     model = genai.GenerativeModel('models/gemini-1.5-pro-latest')
-
-    process_all_folders('./data/processed', './data/results',model2)
-    prompt = input("Extract the handwritten text from the following imags: ")
-    x = generate_response(prompt)
-    return jsonify({'result': processed,
-                    'text': x}), 200
+    x = process_folder(processed, "C:/Users/srava/Desktop/s4ds-project/backend/data/results", model)
+    for file in os.listdir(processed):
+        path = os.path.join(processed, file)
+        extract_text(path, x, model)
+        time.sleep(15)
+    with open(x, 'r') as file:
+        text_c = file.read()
+    return jsonify({'result': x,
+                    'transcript': text_c}), 200
 
 # Base folder to save the images
 def pdf_to_img(name,path):
@@ -104,61 +108,24 @@ def init_api_keys():
         raise
 
 
-def extract_handwritten_text(image_path: str, output_file_path: str):
-    """Extracts handwritten text from an image and saves it to a text file."""
-    client = vision.ImageAnnotatorClient()
-    with io.open(image_path, 'rb') as image_file:
-        content = image_file.read()
 
-    image = vision.Image(content=content)
-    response = client.document_text_detection(image=image)
 
-    if response.error.message:
-        raise Exception(f'API returned error: {response.error.message}')
-
-    extracted_text = response.full_text_annotation.text
-
-    with open(output_file_path, 'a', encoding='utf-8') as text_file:
-        text_file.write(extracted_text)
-
-def extract_test(image_path: str, output_file_path: str, model):
-    with io.open(image_path, 'rb') as image_file:
-        content = image_file.read()
+def extract_text(image_path: str, output_file_path: str, model):
+    content = PIL.Image.open(image_path)
     response = model.generate_content(["Provide the text as it is from the images as well as remove all the scribbled words in it.", content])
     extracted_text = response.text
-    with open(output_file_path, 'a') as text_file:
+    app.config['create1'] = output_file_path
+    with open(app.config['create1'], 'a', encoding="utf-8") as text_file:
         text_file.write(extracted_text)
-def process_all_folders(base_folder: str, result_folder: str,model):
-    for folder in os.listdir(base_folder):
-        folder_path = os.path.join(base_folder, folder)
-        result_file_path = os.path.join(result_folder, f'{folder}.txt')
-
-        os.makedirs(result_folder, exist_ok=True)
-
-        if os.path.isdir(folder_path):
-            for file in os.listdir(folder_path):
-                if file.lower().endswith(('.png', '.jpg', '.jpeg')):
-                    image_path = os.path.join(folder_path, file)
-                    extract_test(image_path, result_file_path,model)
-            print(f"Processed all images in {folder}.")
+def process_folder(folder: str, result_folder: str,model):
+    folder_base = os.path.basename(folder)
+    app.config['upload_folder3'] = result_folder
+    b = secure_filename(folder_base)
+    result_file_path = os.path.join(app.config['upload_folder3'], b+'.txt')
+    return result_file_path
 
 
-def generate_response(prompt: str):
-    generation_config = {
-        "temperature": 0.1,
-        "top_p": 1,
-        "top_k": 1,
-        "max_output_tokens": 2048,
-    }
-    model = genai.GenerativeModel(
-        model_name="gemini-1.5-pro-latest", generation_config=generation_config)
-    prompt_parts = [prompt]
 
-    try:
-        response = model.generate_content(prompt_parts)
-        print(response.text)
-    except Exception as exception:
-        print("Error generating response:", exception)
 
 if __name__ == '__main__':
     app.run(debug = True)

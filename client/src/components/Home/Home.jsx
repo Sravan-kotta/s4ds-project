@@ -47,7 +47,7 @@ const Home = () => {
       const data = await response.json();
       
       if (response.ok) {
-        setMessage(`File processed: ${data.result}`);
+        setMessage(`File processed: ${data.result} content: ${data.transcript}`);
       } else {
         setMessage('Error processing file.');
       }

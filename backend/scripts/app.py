@@ -51,7 +51,7 @@ def taker():
     file.save(filepath)
     processed = pdf_to_img(v,filepath)
     #init_api_keys()
-    os.environ['GOOGLE_API_KEY2'] = 'AIzaSyBnc0piIW-Kwb4AdpUB2PBEKjNvY1vm3_A'
+    os.environ['GOOGLE_API_KEY2'] = ''
 
 # Step 2: Retrieve the API key from the environment variable
     GOOGLE_API_KEY2 = os.getenv('GOOGLE_API_KEY2')

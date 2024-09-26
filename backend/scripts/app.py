@@ -51,7 +51,6 @@ def taker():
     file.save(filepath)
     processed = pdf_to_img(v,filepath)
     #init_api_keys()
-    os.environ['GOOGLE_API_KEY2'] = ''
 
 # Step 2: Retrieve the API key from the environment variable
     GOOGLE_API_KEY2 = os.getenv('GOOGLE_API_KEY2')
@@ -64,9 +63,9 @@ def taker():
     for file in os.listdir(processed):
         path = os.path.join(processed, file)
         extract_text(path, x, model)
-        time.sleep(15)
-    with open(x, 'r') as file:
-        text_c = file.read()
+        time.sleep(10)
+    f = io.open(x, mode="r", encoding="utf-8")
+    text_c = f.read()
     return jsonify({'result': x,
                     'transcript': text_c}), 200
 

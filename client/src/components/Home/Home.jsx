@@ -52,8 +52,13 @@ const Home = () => {
         setMessage('Error processing file.');
       }
     } catch (error) {
+      const response = await fetch('http://127.0.0.1:5000/upload', {
+        method: 'POST',
+        body: formData, // Send the file in FormData
+      });
+      const data = await response.json();
       console.error('Error during file upload:', error);
-      setMessage('Error during file upload.');
+      setMessage(`Error during file upload: ${error} content progress: ${data.transcipt}`);
     }
   };
 

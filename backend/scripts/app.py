@@ -240,10 +240,7 @@ def evaluate_answers(student_responses, question_paper_path):
                 "marks_awarded": marks_awarded,
                 "total_marks": total_marks
             })
-        result_json.append({
-            "total_awarded": match_total[0][0],
-            "total_marks": match_total[0][1]
-        })
+        
         # Convert the list of dictionaries to a JSON format and return
         json.dumps(result_json, indent=4),match_total
     print(result_json)

@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, session
 from flask_cors import CORS
 from werkzeug.utils import secure_filename
 from werkzeug.datastructures import  FileStorage
@@ -7,10 +7,14 @@ import PIL.Image
 import os
 import io
 import time
-from google.cloud import vision
+import re 
 import google.generativeai as genai
-
+import json
+from logging import FileHandler,WARNING
 app = Flask(__name__)
+file_handler = FileHandler('errorlog.txt')
+file_handler.setLevel(WARNING)
+app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 CORS(app)
 users = {
     "admin": "password",
@@ -51,6 +55,7 @@ def taker():
     file.save(filepath)
     processed = pdf_to_img(v,filepath)
     #init_api_keys()
+    os.environ['GOOGLE_API_KEY2'] = 'AIzaSyBnc0piIW-Kwb4AdpUB2PBEKjNvY1vm3_A'
 
 # Step 2: Retrieve the API key from the environment variable
     GOOGLE_API_KEY2 = os.getenv('GOOGLE_API_KEY2')
@@ -62,82 +67,20 @@ def taker():
     x = process_folder(processed, "C:/Users/srava/Desktop/s4ds-project/backend/data/results", model)
     for file in os.listdir(processed):
         path = os.path.join(processed, file)
-        extract_text(path, x, model)
-        time.sleep(10)
+        try:
+            extract_text(path, x, model)
+            time.sleep(10)
+        except Exception as error:
+            print (error)
+            pass
+    session['transcript_path'] = x 
+    y = session.get('transcript_path')
+    print(y)
     f = io.open(x, mode="r", encoding="utf-8")
     text_c = f.read()
+    print(text_c)
     return jsonify({'result': x,
                     'transcript': text_c}), 200
-
-@app.route('/evaluation', methods=['GET', 'POST'])
-def evaluate():
-    if request.method == 'GET':
-        return jsonify({'message': 'Evaluation API is working. Use POST to submit data.'}), 200
-
-    if request.method == 'POST':
-        # Instead of getting form data, read the transcript directly from the processed file
-        try:
-            # Define the path to the file where the transcript is saved
-            result_file_path = r"C:\Aryan(ps)\s4ds-project-main\backend\data\results\AI_sem_7_2022_2023.txt"
-
-            # Ensure the file exists and then read the content
-            if not os.path.exists(result_file_path):
-                return jsonify({'message': 'Transcript file not found.'}), 400
-
-            # Read the transcript from the file
-            with open(result_file_path, 'r') as file:
-                student_response_text = file.read()
-
-            # Proceed with the evaluation using the student's response
-            question_paper_path = r"C:/Aryan(ps)/s4ds-project-main/backend/data/etrx_qp(1).txt"
-            
-            if not os.path.exists(question_paper_path):
-                return jsonify({'message': 'Question paper not found'}), 400
-
-            # Evaluate the student's responses using the LLM
-            result = evaluate_answers(student_response_text, question_paper_path)
-
-            return jsonify({'evaluation_result': result}), 200
-
-        except Exception as e:
-            return jsonify({'message': f'Error processing evaluation: {e}'}), 500
-
-
-def evaluate_answers(student_responses, question_paper_path):
-    # Read the question paper from the file
-    with open(question_paper_path, 'r') as file:
-        question_paper = file.read()
-
-    # Construct the evaluation prompt
-    prompt = f"""
-    You are an evaluator assigned to grade a student's response based on the provided question paper.
-    
-    The following are the student's responses:
-
-    {student_responses}
-
-    Here is the question paper:
-
-    {question_paper}
-
-    You need to evaluate the student's answers and assign marks out of 10 for each answer. Provide feedback and give a total score out of 30.
-    """
-
-    # Initialize the LLM model
-    model = genai.GenerativeModel("gemini-1.5-flash")
-
-    # Generate content using the model
-    try:
-        response = model.generate_content(prompt)
-        print(f"LLM Response: {response.text}")
-    except Exception as e:
-        print(f"Error during model generation: {e}")
-        return "Error in LLM evaluation."
-
-    # Extract the evaluation result from the response
-    evaluation_result = response.text.strip()
-
-    return evaluation_result
 
 # Base folder to save the images
 def pdf_to_img(name,path):
@@ -194,7 +137,117 @@ def process_folder(folder: str, result_folder: str,model):
     return result_file_path
 
 
+@app.route('/evaluation', methods=['GET', 'POST'])
+def evaluate():
+        data = request.get_json()
+    
+        file_path = data.get('file_path')
+        print(file_path)
+        # Instead of getting form data, read the transcript directly from the processed file
+        try:
+            # Define the path to the file where the transcript is saved
+            #result_file_path = r"C:\Users\srava\Desktop\s4ds-project\backend\data\results\AI_sem_7_2022_2023.txt"
+            #result_file_path2 = session.get('transcript_path')
+            result_file_path = file_path
+            print(result_file_path)
+            # Ensure the file exists and then read the content
+            if not os.path.exists(result_file_path):
+                return jsonify({'message': 'Transcript file not found.'}), 400
 
+            # Read the transcript from the file
+            with open(result_file_path, 'r') as file:
+                student_response_text = file.read()
+
+            # Proceed with the evaluation using the student's response
+            question_paper_path = "C:/Users/srava/Desktop/s4ds-project/backend/data/etrx_qp (1).txt"
+            
+            if not os.path.exists(question_paper_path):
+                return jsonify({'message': 'Question paper not found'}), 400
+
+            # Evaluate the student's responses using the LLM
+            result = evaluate_answers(student_response_text, question_paper_path)
+            print(result)
+            return jsonify({'evaluation_result': result}), 200
+
+        except Exception as e:
+            return jsonify({'message': f'Error processing evaluation: {e}'}), 500
+
+
+def evaluate_answers(student_responses, question_paper_path):
+    # Read the question paper from the file
+    with open(question_paper_path, 'r') as file:
+        question_paper = file.read()
+    
+    os.environ['GOOGLE_API_KEY2'] = 'AIzaSyBnc0piIW-Kwb4AdpUB2PBEKjNvY1vm3_A'
+
+# Step 2: Retrieve the API key from the environment variable
+    GOOGLE_API_KEY2 = os.getenv('GOOGLE_API_KEY2')
+
+# Step 3: Configure the API key for your service
+    genai.configure(api_key=GOOGLE_API_KEY2)
+
+    # Construct the evaluation prompt
+    prompt = f"""
+    You are an evaluator assigned to grade a student's response based on the provided question paper.
+    
+    The following are the student's responses:
+
+    {student_responses}
+
+    Here is the question paper:
+
+    {question_paper}
+
+    You need to evaluate the student's answers and assign marks out of 10 for each answer. Provide feedback and give a total score out of 30.
+    respond in a specific format, this is an example: "**Q1a:** <feedback>  **Award 2/5 marks**"
+    """
+
+    # Initialize the LLM model
+    model = genai.GenerativeModel("gemini-1.5-flash")
+
+    # Generate content using the model
+    try:
+        response = model.generate_content(prompt)
+        print(f"LLM Response: {response.text}")
+    except Exception as e:
+        print(f"Error during model generation: {e}")
+        return "Error in LLM evaluation."
+
+    # Extract the evaluation result from the response
+    evaluation_result = response.text.strip()
+    pattern = r"\*\*(Q\d+[a-z]*):\*\*\s*(.*?)\s*\*\*Award\s*(\d+)/(\d+)\s*marks\*\*"
+    
+    # Use re.findall to find all matches in the text
+    matches = re.findall(pattern, evaluation_result, re.DOTALL)
+    pattern_total = rf"Total Score: (\d+)/(\d+)"
+
+    match_total = re.findall(pattern_total, evaluation_result, re.DOTALL)
+    if matches:
+        # Create a list to store dictionaries for each match
+        result_json = []
+        
+        # Loop through each match and create a dictionary
+        for match in matches:
+            question = match[0]
+            comment = match[1].strip()
+            marks_awarded = int(match[2])
+            total_marks = int(match[3])
+            
+            # Append each match as a dictionary to the result list
+            result_json.append({
+                "question": question,
+                "comment": comment,
+                "marks_awarded": marks_awarded,
+                "total_marks": total_marks
+            })
+        result_json.append({
+            "total_awarded": match_total[0][0],
+            "total_marks": match_total[0][1]
+        })
+        # Convert the list of dictionaries to a JSON format and return
+        json.dumps(result_json, indent=4),match_total
+    print(result_json)
+    return evaluation_result
 
 if __name__ == '__main__':
     app.run(debug = True)

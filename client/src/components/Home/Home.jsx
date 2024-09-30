@@ -38,6 +38,7 @@ const Home = () => {
           result: data.result,
           transcript: data.transcript
         });
+        navigate('')
       } else {
         setMessage('Error processing file.');
       }
@@ -58,9 +59,10 @@ const Home = () => {
 
   const handleEvaluateClick = () => {
     if (fetchedData) {
+      
       navigate('/evaluation', { state: { fetchedData } });
     } else {
-      setError('Please upload and process the file before evaluating.');
+      setMessage('Please upload and process the file before evaluating.');
     }
   };
   

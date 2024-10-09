@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import './Evaluation.css';
+
 
 const Evaluation = () => {
   let path2 = useLocation();
@@ -33,7 +35,7 @@ const Evaluation = () => {
         setEvaluationResult(data.evaluation_result); // Set the result to state
       } catch (err) {
         setError(`Failed to fetch evaluation result: ${err.message}`);
-      
+
       } finally {
         setIsLoading(false); // Ensure loading is stopped regardless of success/failure
       }
@@ -42,8 +44,8 @@ const Evaluation = () => {
     // Trigger fetching the evaluation result
     fetchEvaluationResult();
   }, []);
-   // Empty dependency array means this runs only once when the component mounts
-  
+  // Empty dependency array means this runs only once when the component mounts
+
   return (
     <div>
       <h2>Evaluation Result</h2>

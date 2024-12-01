@@ -50,7 +50,7 @@ def taker():
 
     # Save the file
     v = secure_filename(file.filename)
-    app.config['UPLOAD_FOLDER'] = "C:/Users/srava/Desktop/s4ds-project/backend/data/raw"
+    app.config['UPLOAD_FOLDER'] = r"C:\Aryan(ps)\s4ds-project\backend\data\raw"
     filepath = os.path.join(app.config['UPLOAD_FOLDER'], v)
     file.save(filepath)
     processed = pdf_to_img(v,filepath)
@@ -64,7 +64,7 @@ def taker():
     genai.configure(api_key=GOOGLE_API_KEY2)
     model2 = genai.GenerativeModel(model_name="models/gemini-1.5-flash-latest")
     model = genai.GenerativeModel('models/gemini-1.5-pro-latest')
-    x = process_folder(processed, "C:/Users/srava/Desktop/s4ds-project/backend/data/results", model)
+    x = process_folder(processed, r"C:\Aryan(ps)\s4ds-project\backend\data\results", model)
     for file in os.listdir(processed):
         path = os.path.join(processed, file)
         try:
@@ -84,7 +84,7 @@ def taker():
 
 # Base folder to save the images
 def pdf_to_img(name,path):
-    app.config['UPLOAD_FOLDER2'] = "C:/Users/srava/Desktop/s4ds-project/backend/data/processed"
+    app.config['UPLOAD_FOLDER2'] = r"C:\Aryan(ps)\s4ds-project\backend\data\processed"
     doc = pymupdf.open(path)
     # Create a specific folder for this PDF's images
     pdf_output_folder = os.path.join(app.config['UPLOAD_FOLDER2'], name[:-4])
@@ -159,7 +159,7 @@ def evaluate():
                 student_response_text = file.read()
 
             # Proceed with the evaluation using the student's response
-            question_paper_path = "C:/Users/srava/Desktop/s4ds-project/backend/data/etrx_qp (1).txt"
+            question_paper_path = r"C:\Aryan(ps)\s4ds-project\backend\data\etrx_qp (1).txt"
             
             if not os.path.exists(question_paper_path):
                 return jsonify({'message': 'Question paper not found'}), 400
@@ -178,7 +178,7 @@ def evaluate_answers(student_responses, question_paper_path):
     with open(question_paper_path, 'r') as file:
         question_paper = file.read()
     
-    os.environ['GOOGLE_API_KEY2'] = 'AIzaSyBnc0piIW-Kwb4AdpUB2PBEKjNvY1vm3_A'
+    os.environ['GOOGLE_API_KEY2'] = 'AIzaSyBP8JNlDBtLV1AdTT8AZGuT8I2x6HnhFb4'
 
 # Step 2: Retrieve the API key from the environment variable
     GOOGLE_API_KEY2 = os.getenv('GOOGLE_API_KEY2')

@@ -1,0 +1,786 @@
+Name: Miti Sanghavi
+Date: 07/09/22
+Examination: UT 1 Branch/Semester: VIm/ IETRX
+Subject: Artificial Intelligence
+Question No. 1a 1b 2a 2b 3
+Maximum Marks 5 5 5 5 5
+Marks Obtained 
+
+Q1]a) 
+Ans) Turing Test Approach
+1. The Turing Test was designed by Alan Turing in the year 1950. 
+2. Turing Test was designed in such a way that computer identity would not be revealed to the interruptor
+3. The Turing Test had an interpretor who's task is to recognize which answer was given by machine and human.
+4) The machine/computer prerequisites are:- 
+i) It should know NLP and able to convent fluent english. 
+ii) It show have the knowledge of the world. 
+iii) It should be agile to learn and adopt to the dynamic environment 
+iv) It should know an machine learing and can easily suspend.
+5) Thus, the computer is not allowed our physically present as physical presence 
+Page No. 2
+⑥ is not necessary for intelligence. Though, video signal are sent so that the input of the test are keyboard & screen.
+⑦ Thus, the interruptor should be able to Judge whose answer is human & machine.
+⑧ The aim here is not to give right or wrong answer but to which extant the answer is like humanly.
+⑨ For that, the machine/computer has access to manipulate or any means to not reveal the identity of machine.
+⑩ The Turing Test was passed by a chatbot called 'Eugene Bootsman' in 2012.
+⑪ The interruptor was unable to judge the answer came from computer or human.
+No physical appearance.
+
+[Hand-drawn diagram depicting the Turing Test]
+
+The Turing Test.
+a)
+BFS
+
+1. BFS stands for Breadth First Search
+2. BFS the logic is it starts from source node and visit all the neighbouring node till it reach the end node.
+3. BFS node are in sequence.
+4. It has more space complexity
+5. It require more memory.
+6. It visits siblings and than children nodes.
+7. It is slowest as compared to PFS
+8. No backtracking possible for BFS.
+9. It is better for closest node.
+10. It is best for shortest nodes
+11. It follows FIFO (First In First Out)
+
+DFS:
+1. DFS stands for Depth First search.
+2. DFS starts from deepest node and stacks all the node till it reachs end node.
+3. DFS nodes are stacked form below.
+4. It has less space complexity.
+5. It require less memory.
+6. It visits children node first than sibling node.
+7. It is faster compared to BFS.
+8. Backtracking is possible for DFS.
+9. It is better for far away nodes.
+10. It is best for nodes that are far away.
+11. It follows LIFO (Last In First Out)
+Q.2. 
+a. ans) Goal Based Agent
+
+Can I do Now?
+
+How the world is
+
+What can I do now?
+
+Action
+
+Condition Action Rule
+
+(1) The goal based agent acts on the prior knowledge and current action. 
+(2) It works on previous knowledge of the agent and takes decision for the goal completion.
+(3) Goal based agent set an  for the number of steps to be taken to reach the goal. 
+(4) Goal based agent is better suitable for achieving any kind of goal. 
+(5) It enhances performance with best suitable for goal oriented task.
+(6) It will calculate the risk and steps involved to achieve goal and gives excellent prediction. 
+Page No. 5
+
+(7) It will also automatically calculate the distance or steps required.
+(8) It has ability to adopt in constantly stochastic environment
+(9) It will easily reconfigure for the new percept which it continuously takes from dynamic environment.
+(10) The self learning Jarvis are goal based agent. The agent continuously percepts from the environment what happen if the taxi is take sudden left, it will learn how the environment interrelates, signals, traffic etc. an gives the provide directions to reach the goal.
+(11) Other example for goal based agent is say, we need to go to Pune from Mumbai, the GPS works and goal based agent it will route and guide the step to reach Mumbai. As there is road blockage or road closure it will reroute. 
+So basically, goal based agent gives us best outcomes to reach the goal or to achieve the goal.
+Page No. 6 
+
+| Q2. (5 marks) | System | Performance Measure | Environment | Actuators | Sensor |
+|---|---|---|---|---|---|
+| 1 | Satellite Image Analysis | Downlink the earth orbit | Stochastic, Dynamic, Continuous | Wide look, Pixel array | Camera, Pixel array |
+| 2 | Refinery Controls | Safety, Refining, Controlling Temperature | Known, Static, deterministic | Furnance, Switches, Generator | Thermal Sensor, IR sensor, Heat sensor |
+| 3 | Ecommerce system | Sales, Quantity, Quality, revenue, discounts | Dynamics, Multiple agents, Continuous | Weblinks, social media trends, | Publishing Approval. |
+| 4 | Blood Testing System | Health, Happiness, Testing advice | Static, Known, single agent | Hospital patients | Blood Test Reports. |
+| 5 | An automated face recognizer | Detection of correct face, Reporting, Analysing in huge crowd | Dynamic, Multiple Agent, Continuous | Fingerprint slot, face slot | Sensor, Heat, Biometric sensor | 
+**Breadth First Search (BFS)**
+
+1. BFS is finding the shortest Job first.
+2. It starts from root nodes. Checks the distance from root node to destination node and checks all neighboring nodes. 
+3. Thus, checking the shortest distance from root node to destination node. It will go to the end node.
+4. BFS happens in sequential manner.
+5. No Backtracking is possible as it starts from root node.
+6. Once the sequence is selected it is possible to  or alter at later. 
+7. BFS works best for finding the shortest node.
+8. BFS first visits sibling node and then child node.
+9. BFS has FIFO concept (First In First Out), which makes it suitable for shortest Job. 
+10. BFS is used in plotting  Plot and graphs. 
+Eg- 
+Name: Miti Sanghavi
+Date: 07/09/22
+Examination: UT 1
+Branch/Semester: VII^th/ETRX
+Subject: Artificial Intelligence
+
+Q1(a)
+Ans:  Turing Test Approach
+
+1. The Turing Test was designed by Alan Turing in the year 1950.
+2. Turing Test was designed in such a way that computer identity would not be revealed to the interruptor.
+3. The Turing Test had an interpretator who's task is to recognize which answer was given by machine and human. 
+4. The machine/computer prerequisites are:-
+     (i) It should know NLP and able to convert fluent English.
+     (ii) It should have the knowledge of the world.
+     (iii) It should be agile to learn and adopt to the dynamic environment
+     (iv) It should know an machine learning and can easily respond.
+5. Thus, the computer is not allowed our physically present as physical presence.
+Page No-2
+
+is not necessary for intelligence. Though, video signal are sent so that the input of the test are keyboard & screen. 
+Thus, the interuptor should be able to judge whose answer is human & machine.
+The aim here is not to give right or wrong answer but to which extant the answer is like humanly.
+for that the machine (computer) has to guess to manipulate or any means to not reveal the identity of machine.
+The Turing Test was passed by a chatbot called 'Eugene Bootsman' in 2012.
+The interuptor was unable to judge the answer came from computer or human. 
+
+The Turing Test: 
+**BFS**
+
+1. BFS stands for Breath First Search.
+2. BFS, the logic is it starts from one node and visit all the neighboring node till it reach the end node. 
+3. BFS node are in sequence.
+4. It has more space complexity.
+5. It require more memory.
+6. It visits siblings and then children nodes.
+7. It is slowest as compared to DFS.
+8. No backtracking possible for BFS.
+9. It is better for closet node.
+10. It's best for shortest nodes.
+11. It follows FIFO (First In First Out).
+
+**DFS**
+
+1. DFS stands for Depth First search.
+2. DFS starts from deepest node and stacks all the node till it reachs end node.
+3. DFS nodes are stacked from below.
+4. It has less space complexity.
+5. It require less memory.
+6. It visits children node first than sibling node.
+7. It is faster compared to BFS.
+8. Backtracking is possible for DFS.
+9. It is better for far away nodes.
+10. It is best for nodes that are far away.
+11. It follows LIFO (Last In First Out).
+Q2.
+a Ans) Goal Based Agent 
+
+(Image)
+
+1. The goal based agent acts on the prior knowledge and current action. 
+2. It works on previous knowledge of the agent and takes decision for the goal completion.
+3. Goal based agent set an  agenda. Agenda - for the number of steps to be taken to reach the goal.
+4. Goal based agent is better suitable for achieving any kind of goal.
+5. It enhances performance with best suitable for goal oriented task.
+6. It will calculate the risk and steps involved to achieve goal and gives excellent prediction. 
+Page No. 5
+
+⑦ It will also automatically calculate the distance or steps required.
+⑧ It has ability to adopt in constantly stochastic environment
+⑨ It will easily reconfigure for the new percept which it continously takes from dynamic environment.
+
+⑩ The self learning Jarvis are goal based agent. The agent continously percepts from the environment what happen of the taxis take sudden left. it will learn how the environment interbalts, signals, traffic etc. an gives the pueride directions to reach the goal. 
+
+⑪ Other example for goal based agent is say, we need to go to Pune from Mumbai, the GPS works and goal based agent it will route and guide the step to reach Mumbai.
+As there is road blockage or road closure it will reroute.
+So basically, goal based agent gives us best outcomes to reach the goal or to achieve the goal. 
+Page No. 6
+
+|  | System | Performance Measure | Environment | Actuators | Sensor |
+|---|---|---|---|---|---|
+| 1 | Satellite Image Analysis | Downlink the earth orbit | Stochastic, Dynamic, Continuous | Web color, Pixel array | Camera, Pixel array |
+| 2 | Refinery Control | Safety, Refining, Control, Temperature | Known, Static, deterministic | Furnance, switches, generator | Thermal sensor, IR sensor, Heat sensor |
+| 3 | Ecommerce system | Sales, Quantity, Quality, revenue, discounts | Dynamics, Multiple agents, Continuous | Weblinks, social media trends, | Publishing Approval. |
+| 4 | Blood Testing System | Health, Happiness, Testing, advice | Static, Known, single agent | Hospital patients | Blood Test Reports. |
+| 5 | An automated face recognizer | Detection of correct face, Reporting, analysing in huge crowd | Dynamic, Multiple agent, Continuous | Fingerprint slot, face slot | lens sensor, Heat, Biometric sensor | 
+a. **Breadth First Search (BFS)**: 
+
+1. BFS is finding the shortest Job first.
+2. It starts from root node, checks the distance from root node to destination node and checks all neighboring nodes.
+3. Thus, checking the shortest distance from root node to destination node.
+4. It will go to the end node.
+5. BFS happens in sequential manner.
+6. No Backtracking is possible as it starts from root node.
+7. Once the sequence is selected it is possible to  or alter at later.
+8. BFS works best for finding the shortest node.
+9. BFS first visits sibling node and then child node.
+10. BFS has FIFO concept (First In First Out), which makes it suitable for shortest Job.
+11. BFS is used in plotting  Plots and graphs. 
+
+eg- 
+Page No. 8
+
+→ Example of BFS
+
+
+The root node is S
+The destination node is y 
+
+The BFS will first check all the neighbouring nodes and then decide the shortest Id node.
+Root Node:
+
+
+Thus, the BFS would select the closest path from Root node S to y that is it will select,
+S → D → y. 
+K.J. SOMAIYA INSTITUTE OF ENGINEERING AND INFORMATION TECHNOLOGY
+
+Candidate Roll No.  17
+
+Name: Miti Sanghavi
+Date: 07/09/22
+Examination: UT 1  Branch/Semester: Vth IETRX.
+Subject: Artificial Intelligence
+
+Question No.	1 a	1 b	2 a b	3 a b
+Maximum Marks	5	5	5 5	5 5
+Marks Obtained	05	05	08 10	08 
+
+Q1] a)
+Ans) Turing Test Approach
+     1. The Turing Test was designed by Alan Turing in the year 1950.
+     2. Turing Test was designed in such a way that computer identity would not be revealed to the interruptor.
+     3. The Turing Test had an interpretor who's task is to recognize which answer was given by machine and human. 
+     4. The machine/computer prerequisites are:-
+       (i) It should know NLP and able to convent fluent English.
+       (ii) It should have the knowledge of the would.
+       (iii) It should be agile to learn and adapt to the dynamic environment
+       (iv) It should know an machine learning and can easily respond.
+     5. Thus, the computer is not allowed our physically present as physical presence 
+Page No - 2
+
+⑥ Though, video signal are sent so that the input of the test are keyboard & screen. 
+⑦ Thus, the interpretor should be able to judge whose answer is human & machine.
+⑧ The aim here is not to give right or wrong answer but to which extant the answer is like humanly.
+⑨ For that the machine/computer has access to manipulate or any means to not reveal the identity of machine.
+⑩ The Turing Test was passed by a chatbot called 'Eugene Bootsman' in 2012.
+⑪ The interpretor was unable to judge the answer came from computer or human.
+
+
+The Turing Test:
+Q.
+Draw.
+
+**BFS**
+1. BFS stands for Breath First Search.
+2. BFS the logic is it starts from one node and visit all the neighboring node till it reach the end node.
+3. BFS node are in sequence.
+4. It has more space complexity.
+5. It require more memory.
+6. It visits siblings and then children nodes.
+7. It is slowest as compared to DFS.
+8. No backtracking possible for BFS.
+9. It is better for closest node.
+10. It is best for shortest nodes.
+11. It follows FIFO (First In First Out)
+
+**DFS**
+1. DFS stands for Depth First Search.
+2. DFS starts from deepest node and stacks all the node till it reachs end node.
+3. DFS nodes are stacked form below.
+4. It has less space complexity.
+5. It require less memory.
+6. It visits children node first than sibling node.
+7. It is faster compared to BFS.
+8. Backtracking is possible for DFS.
+9. It is better for far away nodes.
+10. It is best for nodes that are far away.
+11. It follows LIFO (Last In First Out)
+Q2. 
+a. Ans.) Goal Based Agent
+<br>
+<div align="center">
+<img src="https://i.imgur.com/lYj6J5L.png" width="500"/> 
+</div>
+<br>
+
+1) The goal based agent acts on the prior knowledge and current action.
+2) It works on previous knowledge of the agent and takes decision for the goal completion.
+3) Goal based agent set an  Agenda. Agenda -  the number of steps to be taken to reach the goal.
+4) Goal based Agent is better suitable for achieving any kind of goal. 
+5) It enhances performance with best suitable for goal oriented task.
+6) It will calculate the risk and steps involved to achieve goal and gives excellent prediction. 
+Page No. 5 
+
+⑦ It will also automatically calculate the distance or steps required.
+⑧ It has ability to adopt in constantly stochastic environment.
+⑨ It will easily reconfigure for the new percept which it continuously takes from dynamic environment. 
+
+⑩ The self-learning Jarvis are goal based agent. The agent continuously percepts from the environment what happen of the taxi is take sudden left, it will learn how the environment interacts signals, traffic etc. an gives the provide directions to reach the goal.
+
+⑪ Other example for goal based agent is say, we need to go to Pune from Mumbai, the GPS works and goal based agent it will route and guide the step to reach Mumbai.
+If there is road blockage or road closure it will reroute.
+so basically, goal based agent gives star best outcomes to reach the goal or to achieve the goal. 
+Page No. 6
+
+| System | Performance Measure | Environment | Actuators | Sensor |
+|---|---|---|---|---|
+| Satellite Image Analysis | Downlink the earth orbit | Stochastic, Dynamic, Continuous |  | Camera, Pixel array |
+| Refinery Control | Safety, Refining, Control of Temperature | Known, Static, Deterministic | Furnance, Switches, Generator | Thermal Sensor, IR sensor, Heat sensor |
+| Ecommerce system | Sales, Quantity, Quality, Revenue, discounts | Dynamics, Multiple agents, Continuous | Weblinks, Social media trends,  | Publishing Approval |
+| Blood Testing System | Health, Happiness, Testing, advice | Static, Known, Single agent | Hospital patients | Blood Test Reports |
+| An automated face recognizer | Detection of Correct face, Reporting, Analysing in huge crowd | Dynamic, Multiple agent, Continuous | Fingerprint slot, face slot | Lens, Heat, Biometric sensor | 
+a (Ans). Breadth First Search (BFS):
+
+1. BFS is finding the shortest Job first.
+2. It starts from root nodes checks the distance from root node to destination node and checks all neighbouring nodes. 
+3. Thus, checking the shortest distance from root node to destination node.
+4. It will go to the end node.
+5. BFS happens in sequential manner.
+6. No Backtracking is possible as it starts from root node.
+7. Once the sequence is selected it is possible to  or alter et later.
+8. BFS works best for finding the shortest node. 
+9. BFS first visits sibling node and then child node.
+10. BFS has FIFO concept (First in First out), which makes it suitable for shortest Job.
+11. BFS is used in plotting Bipartite Plots and graphs.
+
+eg- 
+Page No. 8
+
+$\implies$ Example of BFS 
+
+The root node is S
+The destination node is Y
+
+The BFS will first check all the neighbouring nodes and then decide the shortest ... node.
+Root Node
+
+Thus, the BFS would select the closest path from Rootnode S to Y that is it will select,
+S $\implies$ D $\implies$ Y.
+Name: Mit Sanghavi
+Date: 07/09/22
+Examination: UT 1
+Branch/Semester: VIm/ I-TEX.
+Subject: Artificial Intelligence
+
+**(Q1)a)
+Ans). Turing Test Approach.
+(1) The Turing Test was designed by Alan Turing in the year 1950.
+(2) Turing Test was designed in such a way that computer identity would not be revealed to the interruptor.
+(3) The Turing Test had an interpretor who's task is to recognize which answer was given by machine and human.
+(4) The machine/computer prerequisites are:-
+     (i) It should know NLP and able to convent fluent english.
+     (ii) It should have the knowledge of the world.
+     (iii) It should be agile to learn and adopt to the dynamic environment
+     (iv) It should know an machine learning and can easily suspend.
+(5) Thus, the computer is not allowed our physically present as physical presencePage No-2
+
+is not necessary for intelligence.
+⑥ Though, video signal are sent so that the input of the test are keyboard & screen. 
+⑦ Thus, the interputer should be able to judge whose answer is human or machine.
+⑧ The aim here is not to give right or wrong answer but to which extant the answer is like humanly.
+⑨ For that the machine/computer has to guess to manipulate or any means to not reveal the identity of machine. 
+⑩ The Turing Test was passed by a chatbot called 'Eugene Bootsman' in 2012. 
+⑪ The interpretor was unable to judge the answer came from computer or human.
+
+The Turing Test: 
+BFS
+① BFS stands for Breath first search
+② BFS the logic is it starts from root node and visit all the neighbouring node till it reach the end node.
+③ BFS node are in sequence
+④ It has more space complexity
+⑤ It require more memory
+⑥ It visits siblings and then children nodes
+⑦ It is slowest as compared to DFS
+⑧ No backtracking possible for BFS
+⑨ It is better for closest node.
+⑩ It is best for shortest nodes
+⑪ It follow FIFO (First In First Out) 
+
+DFS:
+① DFS stands for Depth First search.
+② DFS starts from deepest node and stacks all the node till it reachs end node.
+③ DFS nodes are stacked form below.
+④ It has less space complexity.
+⑤ It require less memory.
+⑥ It visits children node first than sibling node.
+⑦ It is faster compared to BFS.
+⑧ Backtracking is possible for DFS.
+⑨ It is better for far away nodes.
+⑩ It is best for nodes that are far away.
+⑪ It follows LIFO (Last In First Out) 
+Q2. a Ans) Goal Based Agent 
+
+<Image>
+
+1. The goal based agent acts on the prior knowledge and current action.
+2. It works on previous knowledge of the agent and takes decision for the goal completion.
+3. Goal Based agent set an  agenda. Agenda - our the number of step to be taken to reach the goal. 
+4. Goal based agent is better suitable for achieving any kind of goal. 
+5. It enhances performance with best suitable for goal oriented task.
+6. It will calculate the risk and steps involved to achieve goal and gives excellent prediction. 
+Page No. 5
+
+⑦ It will also automatically calculate the distance or steps required.
+⑧ It has ability to adopt in constantly stochastic environment.
+⑨ It will easily reconfigure for the new precept which it continuously takes from dynamic environment.
+
+⑩ The self-learning Jarvis are goal based agent. The agent continuously percepts from the environment what happen of the taxi is take sudden left, it will learn how the environment interacts: signals, traffic etc. and gives the precise predictions to reach the goal.
+
+⑪ Other example for goal based agent is say, we need to go to Pune from Mumbai, the GPS works and goal based agent it will route and guide the step to reach Mumbai.
+If there is road blockage or road closure it will reroute.
+so basically, goal based agent gives us best outcomes to reach the goal or to achieve the goal. 
+Page No. 6
+
+|  | System | Performance Measure | Environment | Actuators | Sensor |
+|---|---|---|---|---|---|
+| 1 | Satellite Image Analysis | Downlink the earth orbit | Stochastic, Dynamic, Continuous | Web colour, Pixel array | Camera, Pixel array |
+| 2 | Refinery Controls | Safety, Refining, Controlling Temperature | Known, Static, Deterministic | Furnance, switches, Generator | Thermal sensor, IR sensor, Heat sensor |
+| 3 | Ecommerce system | Sales, Quantity, Quality, Revenue, discounts | Dynamics, Multiple agents, Continuous | Weblinks, Social media trends,  | Publishing Approval. |
+| 4 | Blood Testing System | Health, Happiness, Testing, advice | Static, Known, single agent | Hospital patients | Blood test Reports. |
+| 5 | An automated face recognizer | Detection of correct face, Reporting, Analysing in huge crowd | Dynamic Multiple Agent, Continuous | Fingerprint slot, face slot | Lens, Heat, Biometric sensor | 
+a. Breadth First Search (BFS).
+1. BFS is finding the shortest Job first.
+2. It starts from root nodes checks the distance from root node to destination node and checks all neighbouring nodes.
+3. Thus, checking the shortest distance from root node to destination node.
+4. It will go to the end node.
+5. BFS happens in sequential manner.
+6. No Backtracking is possible as it starts from root node.
+7. Once the sequence is selected it is possible to delete or alter it later.
+8. BFS works best for finding the shortest node.
+9. BFS first visits sibling node and then child node.
+10. BFS has FIFO concept (First in First out) which makes it suitable for shortest Job.
+11. BFS is used in plotting Bipartite Plots and graphs.
+eg- 
+Page No. 8
+
+$\implies$ example of BFS
+
+The root node is S
+The destination node is Y
+
+The BFS will first check all the neighbouring nodes and then decide the shortest $\rfloor$ node. 
+Root Node:
+Thus, the BFS would select the closest path from Rootnode S to Y that is it will select,
+S $\longrightarrow$ D $\longrightarrow$ Y
+Candidate Roll No. 17 
+Name: Mahi Sanghavi
+Date: 07/09/22
+Examination: UT 1                     Branch/Semester: Vth/ETRX.
+Subject: Artificial Intelligence
+
+**(Q.1)(a)**
+**Ans)** Turing Test Approach
+1. The Turing Test was designed by Alan Turing in the year 1950.
+2. Turing Test was designed in such a way that computer identity would not be revealed to the interruptor.
+3. The Turing Test had an interpretor who's task is to recognize which answer was given by machine and human. 
+4) The machine/computer prerequisites are:-
+(i) It should know NLP, and able to convent fluent English.
+(ii) It should have the knowledge of the world.
+(iii) It should be agile to learn and adapt to the dynamic environment. 
+(iv) It should know an machine learning and can easily suspend. 
+5) Thus, the computer is not allowed our physically present as physical presence 
+Page No-2
+
+⑥ is not necessary for intelligence. Though, video signal are sent so that the input of the test are keyboard & screen. 
+⑦ Thus, the interpretor should be able to Judge whose answer is human / machine.
+⑧ The aim here is not to give right or wrong answer but to which extant the answer is like humanly.
+⑨ For that the machine/computer has no cues to manipulate or any means to not reveal the identity of machine.
+⑩ The Turing Test was passed by a chatbot called 'Eugene Bootsman' in 2012.
+⑪ The interpretor was unable to judge the answer came from computer or human. No physical appearance.
+
+The Turing Test: 
+BFS
+
+1. BFS stands for Breadth first search 
+2. BFS the logic is it starts from one node and visit all the neighboring node till it reach the end node.
+3. BFS node are in sequence
+4. It has more space complexity
+5. It require more memory
+6. It visits siblings and then children nodes
+7. It is slowest as compared to DFS
+8. No backtracking possible for BFS
+9. It is better for closest node
+10. It is best for shortest nodes
+11. It follow FIFO (First In First Out)
+
+DFS:
+
+1. DFS stands for Depth First search.
+2. DFS starts from deepest node and stacks all the node till it reachs end node.
+3. DFS nodes are stacked form below
+4. It has less space complexity.
+5. It require less memory.
+6. It visits children node first than sibling node.
+7. It is faster compared to BFS.
+8. Backtracking is possible for DFS.
+9. It is better for far away nodes.
+10. It is best for nodes that are far away.
+11. It follows LIFO (Last In First Out)
+## Goal Based Agent
+
+[Diagram representing the interaction between environment, agent, percepts and actions]
+
+1. The goal based agent acts on the prior knowledge and current action.
+2. It works on previous knowledge of the agent and takes decision for the goal completion. 
+3. Goal based agent set an  for the number of steps to be taken to reach the goal. 
+4. Goal based agent is better suitable for achieving any kind of goal. 
+5. It enhances performance with best suitable for goal oriented task. 
+6. It will calculate the risk and steps involved to achieve goal and gives excellent prediction. 
+Page No. 5
+
+(7) It will automatically calculate the distance or steps required.
+(8) It has ability to adopt in constantly stochastic environment
+(9) It will easily reconfigure for the new precept which it continuously takes from dynamic environment.
+
+(10) The self learning Jarvis are goal based agent. The agent continuously percepts from the environment what happen, if the taxi is take sudden left, it will learn how the environment interacts: signals, traffic etc. and gives the possible predictions to reach the goal.
+
+(11) Other example for goal based agent is say, we need to go to Pune from Mumbai, the GPS works and goal based agent it will route and guide the step to reach Mumbai. 
+If there is road blockage or road closure it will reroute.
+so basically, goal based agent gives us best outcomes to reach the goal or to achieve the goal. 
+Page No. 6
+
+| **System** | **Performance Measure** | **Environment** | **Actuators** | **Sensor** |
+|---|---|---|---|---|
+| Satellite Image Analysis | Downlink the earth orbit | Stochastic, Dynamic, Continuous | Wide below, Pixel array | Camera, Pixel array |
+| Refinery Controls | Safety, Refining, Controling Temperature | Known, Static, Deterministic | Furnance, switches, Generator | Thermal Sensor, IR sensor, Heat sensor |
+| Ecommerce system | Sales, Quantity, Quality, Revenue, discounts | Dynamics, Multiple agents, Continuous | Weblinks, Social media trends | Publishing Approval |
+| Blood Testing System | Health, Happiness, Testing, advice | Static, Known, single agent | Hospital patients | Blood Test Reports |
+| An automated face recognizer | Detection of correct face, Reporting, Analysing in huge crowd | Dynamic Multiple agent, Continuous | Fingerprint slot, face slot | Sensor, Heat, Biometric sensor | 
+a. **Breadth First Search (BFS)**:
+
+1. BFS is finding the shortest Job first.
+2. It starts from root nodes, checks the distance from root node to destination node and checks all neighbouring nodes 
+3. Thus, checking the shortest distance from root node to destination node.
+4. It will go to the end node.
+5. BFS happens in sequential manner.
+6. No Backtracking is possible as it starts from root node.
+7. Once the sequence is selected it is  possible to  or  later.
+8. BFS works best for finding the shortest node. 
+9. BFS first visits sibling node and then child node.
+10. BFS has FIFO concept (First In First Out), which makes it suitable for shortest Job.
+11. BFS is used in plotting Bipolar Plots and graphs. 
+e.g- 
+Name: Miti Sanghavi
+Date: 07/09/22
+Examination: UT I
+Branch/Semester: VIM/ I ET RX
+Subject: Artificial Intelligence
+Question No. 1.a 1.b 2.a 2.b 3.a 3.b
+Maximum Marks 5 5 5 5 5 5 28
+Marks Obtained 05 05 08 10 08  30
+
+Q1)a)
+Ans) Turing Test Approach
+1. The Turing Test was designed by Alan Turing in the year 1950.
+2. Turing Test was designed in such a way that computer identity would not be revealed to the interruptor.
+3. The Turing Test had an interpretor who's task is to recognize which answer was given by machine and human.
+4) The machine/compute prerequisites are:-
+(i) It should know NLP and able to convent fluent english.
+(ii) It should have the knowledge of the world.
+(iii) It should be agile to learn and adopt to the dynamic environment.
+(iv) It should know an machine learning and can easily suspend.
+5) Thus, the computer is not allowed our physically present as physical presence 
+is not necessary for intelligence. Though, video signal are sent so that the input of the test are keyboard & screen. 
+Thus, the interuptor should be able to Judge whose answer is human or machine. 
+The aim here is not to give right or wrong answer but to which extant the answer is like humanly. 
+For that, the machine / computer has no guess to manipulate or any means to not reveal the identity of machine.
+The Turing Test was passed by a chatbot called 'Eugene Bootsman' in 2012.
+The interpretor was unable to judge the answer came from computer or human. No physical appearance. 
+
+The Turing Test. 
+BFS
+
+1. BFS stands for Breadth First Search.
+2. BFS the logic is it starts from root node and visit all the neighboring node till it reach the end node.
+3. BFS nodes are in sequence.
+4. It has more space complexity.
+5. It require more memory.
+6. It visits siblings and then children nodes.
+7. It is slowest as compared to DFS.
+8. No backtracking possible for BFS.
+9. It is better for closest node.
+10. It is best for shortest nodes.
+11. It follow FIFO (First In First Out).
+
+DFS
+
+1. DFS stands for Depth First Search.
+2. DFS starts from deepest node and stacks all the node till it reach end node.
+3. DFS nodes are stacked form below.
+4. It has less space complexity.
+5. It require less memory.
+6. It visits children node first than sibling node.
+7. It is faster compared to BFS.
+8. Backtracking is possible for DFS.
+9. It is better for far away nodes.
+10. It is best for nodes that are far away.
+11. It follows LIFO (Last In First Out).
+Q.2. a. ans) Goal Based Agent 
+
+[Diagram]
+
+1. The goal based agent acts on the prior knowledge and current action. 
+2. It works on previous knowledge of the agent and takes decision for the goal completion.
+3. Goal based agent set an  agenda. Agenda for the number of step to be taken to reach the goal.
+4. Goal based agent is better suitable for achieving any kind of goal.
+5. It enhances performance with best suitable for goal oriented task. 
+6. It will calculate the risk and steps involved to achieve goal and gives excellent prediction. 
+Page No. 5
+
+⑦ It will also automatically calculate the distance or steps required.
+⑧ It has ability to adopt in constantly stochastic environment
+⑨ It will easily reconfigure for the new precept which it continously takes from dynamic environment. 
+
+⑩ The self learning Jarvis are goal based agent. The agent continuously percepts from the environment what happen of the taxi is take sudden left. It will learn how the environment interbalts signals, traffic etc. an gives the precise directions to reach the goal.
+
+⑪ Other example for goal based agents is say, we need to go to Pune from Mumbai, the GPS works and goal based agent it will route and guide the step to reach Mumbai.
+As there is road blockage or road closure it will reroute.
+So basically, goal based agent gives us best outcomes to reach the goal or to achieve the goal. 
+Page No. 6
+
+| Sr. | System | Performance Measure | Environment | Actuators | Sensor |
+|---|---|---|---|---|---|
+| 1 | Satellite Image Analysis | Downlink the earth orbit | Stochastic, Dynamic, Continuous | Web colour, Pixel array | Camera, Pixel array | 
+| 2 | Refinery Controls | Safety, Refining, Control, Temperature | Known, Static, deterministic | Furnance, switches, Generator | Thermal sensor, IR sensor, Heat sensor |
+| 3 | Ecommerce system | Sales, Quantity, Quality, views, discounts | Dynamics, Multiple agents, Continuous | Weblinks, Social media trends, | Publishing Approval. |
+| 4 | Blood Testing System | Health, Happiness, Testing, advice | Static, Known, single agent | Hospital patients | Blood Test Reports. |
+| 5 | An automated face recognizer | Detection of correct face, Reporting, Analysing in huge crowd | Dynamic Multiple agent, Continuous | Fingerprint slot, face slot | lens, Heat, Biometric sensor |
+a. **Breadth First Search (BFS)**:
+1. BFS is finding the shortest Job first.
+2. It starts from root nodes, checks the distance from root node to destination node and checks all neighboring nodes.
+3. Thus, checking the shortest distance from root node to destination node. It will go to the end node.
+4. BFS happens in sequential manner.
+5. No Backtracking is possible as it starts from root node.
+6. Once the sequence is selected it is possible to delete or alter it later.
+7. BFS works best for finding the shortest node.
+8. BFS first visits sibling node and then child node.
+9. BFS has FIFO concept (First in First out) which makes it suitable for shortest Job.
+10. BFS is used in plotting Bipolar Plots and graphs.
+
+eg- 
+Page No 8
+
+Example of BFS
+
+The root node is S
+The destination node is g
+
+The BFS will first check all the neighbouring nodes and then decide the shortest Id node. 
+
+Root Node
+ 
+Thus, the BFS would select the closest path from Rootnode s to g
+that is it will select, 
+s --> D --> g. 
+K.J. SOMAIYA INSTITUTE OF ENGINEERING AND INFORMATION TECHNOLOGY
+
+Candidate Roll No. 17
+
+Name: Miti Sanghavi
+Date: 07/09/22
+Examination: UT 1
+Branch/Semester: Vth/ETRX
+Subject: Artificial Intelligence
+
+Question No. 1.a 1.b 2.a 2.b 3
+Maximum Marks 5 5 5 5 5
+Marks Obtained 05 05 08 10 08
+
+Q(1)a)
+Ans). Turing Test Approach
+(1) The Turing Test was designed by Alan Turing in the year 1950.
+(2) Turing Test was designed in such a way that computer identity would not be revealed to the interruptor
+(3) The Turing Test had an interpretator who's task is to recognize which answer was given by machine and human.
+(4) The machine/computer prerequisites are:-
+    (i) It should know NLP and able to convent fluent English.
+    (ii) It should have the knowledge of the world.
+    (iii) It should be agile to learn and adopt to the dynamic environment
+    (iv) It should know an machine learning and can easily respond.
+(5) Thus, the computer is not allowed our physically present as physical presence 
+Page No- 2
+<br>
+⑥ is not necessary for intelligence. Though, video signal are sent so that the input of the test are keyboard & screen.
+<br>
+⑦ Thus, the interuptor should be able to Judge whose answer is human or machine. 
+<br>
+⑧ The aim here is not to give right or wrong answer but to which extant the answer is like humanly. 
+<br>
+⑨ For that the machine/computer has no cues to manipulate or any means to not reveal the identity of machine
+<br>
+⑩ The Turing Test was passed by a chatbot called 'Eugene Bootsman' in 2012. 
+<br>
+⑪ The interuptor was unable to judge the answer came from computer or human. 
+<br>
+
+<br>
+The Turing Test.
+BFS
+
+1. BFS stands for Breadth first search.
+2. BFS the logic is it starts from source node and visit all the neighbouring node till it reach the end node.
+3. BFS node are in sequence. 
+4. It has more space complexity.
+5. It require more memory.
+6. It visits siblings and then children nodes.
+7. It is slowest as compared to PFS
+8. No backtracking possible for BFS.
+9. It is better for closest node.
+10. It is best for shortest nodes.
+11. It follow FIFO (First In First Out)
+
+DFS:
+
+1. DFS stands for Depth First search.
+2. DFS starts from deepest node and stacks all the node till it reachs end node.
+3. DFS nodes are stacked from below.
+4. It has less space complexity.
+5. It requires less memory. 
+6. It visits children node first than sibling node.
+7. It is faster compared to BFS.
+8. Backtracking is possible for DFS.
+9. It is better for far away nodes.
+10. It is best for nodes that are far away.
+11. It follows LIFO (Last In First Out)
+## Goal Based Agent 
+
+[Image of flowchart omitted]
+
+1. The goal based agent acts on the prior knowledge and current action.
+2. It works on previous knowledge of the agent and takes decision for the goal completion.
+3. Goal based agent set an agenda. Agenda - the number of steps to be taken to reach the goal.
+4. Goal based agent is better suitable for achieving any kind of goal.
+5. It enhances performance with best suitable for goal oriented task.
+6. It will calculate the risk and steps involved to achieve goal and gives excellent prediction.
+Page No. 5
+
+(7) It will also automatically calculate the distance or steps required.
+(8) It has ability to adopt in constantly stochastic environment 
+(9) It will easily reconfigure for the new precept which it continuously takes from dynamic environment.
+(10) The self learning Jarvis are goal based agent, the agent continuously percepts from the environment what happens of the taxi is take sudden left. it will learn how the environment interbalts, signals, traffic etc. and gives the perside predictions to reach the goal.
+(11) Other example for goal based agents say we need to go to Pune from Mumbai, the GPS works and goal based agent it will route and guide the step to reach Mumbai. 
+As there is road blockage or road closure it will reroute.
+So basically, goal based agent gives us best outcomes to reach the goal or to achieve the goal. 
+Page No. 6
+
+|  | System | Performance Measure | Environment | Actuators | Sensor |
+|---|---|---|---|---|---|
+| 1 | Satellite Image Analysis | Downlink the earth orbit | Stochastic, Dynamic, Continuous |  | Camera, Pixel array |
+| 2 | Refinery Control | Safety, Refining, Control, Temperature | Known, Static, Deterministic | Furnance, Switches, Generator | Thermal Sensor, IR sensor, Heat sensor |
+| 3 | Ecommerce System | Sales, Quantity, Quality, Revenue, discounts | Dynamics, Multiple agents, Continuous | Weblinks, social media trends, | Publishing Approval. | 
+| 4 | Blood Testing System | Health, Happiness, Testing, advice | Static, Known, single agent | Hospital patients | Blood Test Reports. | 
+| 5 | An automated face recognizer | Detection of correct face, Reporting, Analysing in huge crowd | Dynamic, Multiple Agent, Continuous | Fingerprint slot, face slot | Sensor, Heat, Biometric Sensor | 
+a. **Breadth First Search (BFS)**:
+
+1. BFS is finding the shortest Job first.
+2. It starts from root nodes, checks the distance from root node to destination node and checks all neighbouring nodes.
+3. Thus, checking the shortest distance from root node to destination node.
+4. It will go to the end node.
+5. BFS happens in sequential manner.
+6. No Backtracking is possible as it starts from root node. 
+7. Once the sequence is selected it is possible to delete or alter it later.
+8. BFS works best for finding the shortest node.
+9. BFS first visits sibling node and then child node.
+10. BFS has FIFO concept (First In First Out), which makes it suitable for shortest Job. 
+11. BFS is used in plotting Bipolar Plots and graphs.
+
+eg- 
+Page No 8
+$\implies$ Example of BFS
+
+
+The root node is S
+The destination node is Y
+
+The BFS will first check all the neighbouring nodes and then decide the shortest node.
+Root Node
+
+Thus, the BFS would select the closest path from Root node S to Y that is it will select,
+S $\implies$ D $\implies$ Y. 

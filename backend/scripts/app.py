@@ -104,6 +104,7 @@ def pdf_to_img(name,path):
 
 
 
+#To determine any possible error in the API key Integration.
 def init_api_keys():
     try:
         #os.environ["GOOGLE_CLOUD_PROJECT"] = "text-extraction-423214"
